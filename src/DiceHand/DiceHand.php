@@ -12,7 +12,8 @@ use Joki20\Dice\Dice;
 class DiceHand extends Dice
 {
 
-    private int $rolls = null;
+    // ? allows null values to be used
+    private ?int $rolls = null;
 
     public function __construct(int $rolls = null)
     {
