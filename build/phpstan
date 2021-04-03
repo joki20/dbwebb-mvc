@@ -1,0 +1,27 @@
+ ------ -------------------------------------------------------------------- 
+ [32m Line [39m [32m src\DiceHand\DiceHand.php                                          [39m 
+ ------ -------------------------------------------------------------------- 
+  21     Access to an undefined property Joki20\DiceHand\DiceHand::$dices.   
+  22     Access to an undefined property Joki20\DiceHand\DiceHand::$values.  
+  35     Access to an undefined property Joki20\DiceHand\DiceHand::$dices.   
+  36     Access to an undefined property Joki20\DiceHand\DiceHand::$dices.   
+  36     Access to an undefined property Joki20\DiceHand\DiceHand::$values.  
+  38     Access to an undefined property Joki20\DiceHand\DiceHand::$values.  
+ ------ -------------------------------------------------------------------- 
+
+ ------ -------------------------------------------------------------- 
+ [32m Line [39m [32m src\Dice\Dice.php                                            [39m 
+ ------ -------------------------------------------------------------- 
+  15     Access to an undefined property Joki20\Dice\Dice::$sides.     
+  16     Access to an undefined property Joki20\Dice\Dice::$lastRoll.  
+  22     Access to an undefined property Joki20\Dice\Dice::$lastRoll.  
+  22     Access to an undefined property Joki20\Dice\Dice::$sides.     
+  29     Access to an undefined property Joki20\Dice\Dice::$lastRoll.  
+  37     Access to an undefined property Joki20\Dice\Dice::$sides.     
+  39     Access to an undefined property Joki20\Dice\Dice::$sides.     
+ ------ -------------------------------------------------------------- 
+
+[37;41m                                                                                                                   [39;49m
+[37;41m [ERROR] Found 13 errors                                                                                           [39;49m
+[37;41m                                                                                                                   [39;49m
+
