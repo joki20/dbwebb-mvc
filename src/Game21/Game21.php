@@ -8,8 +8,10 @@ use Joki20\Dice\Dice;
 use Joki20\GraphicalDice\GraphicalDice;
 use Joki20\DiceHand\DiceHand;
 
+use function Mos\Functions\url;
+
 /**
- * Class Dice.
+ * Class Game21.
  */
 class Game21
 {
@@ -133,7 +135,9 @@ class Game21
                 echo "<p>YOU WON with score " . $_SESSION["playerScore"] . ", computer rolled over 21.</p>";
                 echo "<p>You rolled " . $_SESSION["playerRolls"] . " times</p>";
                 // if computer stopped at or before 21, it means it won over the player
-            } else {
+            }
+
+            if ($_SESSION["computerScore"] <= 21) {
                 echo '<p>Computer won with score ' . $_SESSION["computerScore"] . '
                 vs your score ' . $_SESSION["playerScore"] . '</p>';
                 echo "<p>You rolled " . $_SESSION["playerRolls"] . " times</p>";

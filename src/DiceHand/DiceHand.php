@@ -5,22 +5,24 @@ declare(strict_types=1);
 namespace Joki20\DiceHand;
 
 use Joki20\Dice\Dice;
+use Joki20\GraphicalDice\GraphicalDice;
 
 /**
  * Class Dice.
  */
 class DiceHand extends Dice
 {
-
     // ? allows null values to be used
-    private ?int $rolls = null;
+    private $rolls = null;
+    private $dices = [];
+    private $values = [];
 
     public function __construct(int $rolls = null)
     {
-
-        $this->rolls  = $rolls;
+        $this->rolls = $rolls;
         $this->dices = [];
         $this->values = [];
+        $this->sides = 6; // otherwise undefined when roll() called
 
         for ($i = 0; $i < $this->rolls; $i++) {
             $this->dices[]  = new Dice();
@@ -44,21 +46,6 @@ class DiceHand extends Dice
     {
         $this->rolls = $rolls;
         return $this->rolls;
-    }
-
-    public function graphic(): string
-    {
-        $res = [];
-        $class = [];
-        $output = "";
-        $sum = 0;
-        for ($i = 0; $i < $this->getRolls(); $i++) {
-            $res[$i] = $this->roll(); // roll dice
-            $class[$i] = 'dice-' . $this->getLastRoll() ; // get result of roll
-            $sum += $this->getLastRoll();
-            $output .= '<i class=\'' . $class[$i] . '\'></i>';
-        }
-        return '<p class=\'dice-utf8\'>' . $output . '</p>';
     }
 }
 

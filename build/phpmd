@@ -1,8 +1,9 @@
-C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\game\src\Game21\Game21.php:17	The method game21() has a Cyclomatic Complexity of 12. The configured cyclomatic complexity threshold is 10.
-C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\game\src\Game21\Game21.php:17	The method game21() has 127 lines of code. Current threshold is set to 100. Avoid really long methods.
-C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\game\src\Game21\Game21.php:136	The method game21 uses an else expression. Else clauses are basically not necessary and you can simplify the code by not using them.
-C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\game\src\Router\Router.php:21	The method dispatch() has a Cyclomatic Complexity of 21. The configured cyclomatic complexity threshold is 10.
+C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\game\src\Controller\Session.php:26	Avoid unused local variables such as '$psr17Factory'.
+C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\game\src\DiceHand\DiceHand.php:36	Avoid unused local variables such as '$results'.
+C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\game\src\Game21\Game21.php:19	The method game21() has a Cyclomatic Complexity of 13. The configured cyclomatic complexity threshold is 10.
+C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\game\src\Game21\Game21.php:19	The method game21() has 129 lines of code. Current threshold is set to 100. Avoid really long methods.
+C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\game\src\Yatzy\Yatzy.php:19	The method startGame() has a Cyclomatic Complexity of 45. The configured cyclomatic complexity threshold is 10.
+C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\game\src\Yatzy\Yatzy.php:19	The method startGame() has an NPath complexity of 5904457728. The configured NPath complexity threshold is 200.
+C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\game\src\Yatzy\Yatzy.php:19	The method startGame() has 297 lines of code. Current threshold is set to 100. Avoid really long methods.
 C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\game\src\functions.php:67	Missing class import via use statement (line '67', column '23').
 C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\game\src\functions.php:73	Missing class import via use statement (line '73', column '21').
-C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\game\src\DiceHand\DiceHand.php	-	Unexpected token: int, line: 15, col: 13, file: C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\game\src\DiceHand\DiceHand.php.
-C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\game\src\GraphicalDice\GraphicalDice.php	-	Unexpected token: int, line: 14, col: 13, file: C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\game\src\GraphicalDice\GraphicalDice.php.

@@ -2,14 +2,21 @@
 
 declare(strict_types=1);
 
-namespace Joki20\Dice;
+namespace Mos\Controller;
+
+// use Nyholm\Psr7\Factory\Psr17Factory;
+use Psr\Http\Message\ResponseInterface;
+
+use function Mos\Functions\renderView;
 
 /**
- * Class Dice.
+ * Controller for the dice route.
  */
 class Dice
 {
-    protected $sides;
+    use ControllerTrait;
+
+    private $sides;
     private $lastRoll;
 
     // constructor

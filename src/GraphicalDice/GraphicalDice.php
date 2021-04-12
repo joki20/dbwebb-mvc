@@ -11,7 +11,7 @@ use Joki20\Dice\Dice;
  */
 class GraphicalDice extends Dice
 {
-    private int $rolls = 1;
+    private $rolls = 1;
     const SIDES = 6;
 
     /**
@@ -34,7 +34,7 @@ class GraphicalDice extends Dice
         $output = "";
         for ($i = 0; $i < $this->getRolls(); $i++) {
             $res[$i] = $this->roll();
-            $class[$i] = 'dice-' . $this->getLastRoll() ;
+            $class[$i] = 'dice-sprite dice' . $this->getLastRoll();
             $output .= '<i class=\'' . $class[$i] . '\'></i>';
         }
         return '<p class=\'dice-utf8\'>' . $output . '</p>';

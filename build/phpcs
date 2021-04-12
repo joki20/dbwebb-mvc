@@ -1,0 +1,12 @@
+
+FILE: C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\game\view\yatzy.php
+------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+------------------------------------------------------------------------
+ 9 | ERROR | [x] Header blocks must be separated by a single blank line
+------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+------------------------------------------------------------------------
+
+Time: 1.59 secs; Memory: 8MB
+
