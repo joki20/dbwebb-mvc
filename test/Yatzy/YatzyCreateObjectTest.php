@@ -18,5 +18,14 @@ class YatzyCreateObjectTest extends TestCase
     {
         $game = new Yatzy();
         $this->assertInstanceOf("\Joki20\Yatzy\Yatzy", $game);
+
+        // check session is set
+        $res = $game->startGame();
+        $exp = $_SESSION['timeScored'] = 999;
+        $this->assertEquals($_SESSION['timeScored'], 999);
+
+
+        // when rolling a new game, check values are reset
+        $res = $game->startGame();
     }
 }

@@ -39,7 +39,6 @@ class DiceHand extends Dice
     // getter
     public function getRolls(): string
     {
-        $results = "";
         for ($i = 0; $i < $this->rolls; $i++) {
             $this->dices[$i]->roll(); // roll die
             $this->values[$i] = $this->dices[$i]->getLastRoll(); // save result

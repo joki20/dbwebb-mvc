@@ -16,8 +16,6 @@ use function Mos\Functions\url;
 class Game21
 {
     public function game21(): string {
-        isset($_SESSION["status"]) ? $_SESSION["status"] : $_SESSION["status"] = "start";
-
         $start = '<form method="POST" id="form-roll">
                     <input
                         type="submit"
