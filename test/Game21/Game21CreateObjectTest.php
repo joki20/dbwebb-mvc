@@ -12,7 +12,7 @@ use Joki20\DiceHand\DiceHand;
 class Game21CreateObjectTest extends TestCase
 {
     /**
-     * Construct object and verify that the object is instance of DiceHand class
+     * Construct object and verify that the object is instance of Game21 class
      */
     public function testCreateGame21()
     {
@@ -174,11 +174,11 @@ class Game21CreateObjectTest extends TestCase
          $_SESSION["computerRolls"] = 3;
          $res = $game->computerTurn();
          $exp = '
-            <p>Computer won with score ' . $_SESSION['computerScore'] . ' vs
-            your score ' . $_SESSION['playerScore'] . '.</p>
-            <p>You rolled ' . $_SESSION['playerRolls'] . ' times.</p>
-            <p>Computer rolled ' . $_SESSION['computerRolls'] . ' times</p>
-            ';
+                <p>Computer won with score ' . $_SESSION['computerScore'] . ' vs
+                your score ' . $_SESSION['playerScore'] . '.</p>
+                <p>You rolled ' . $_SESSION['playerRolls'] . ' times.</p>
+                <p>Computer rolled ' . $_SESSION['computerRolls'] . ' times</p>
+                ';
           $this->assertEquals($exp, $res);
   }
 

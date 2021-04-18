@@ -1,0 +1,56 @@
+
+FILE: C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\game\src\Game21\Game21.php
+--------------------------------------------------------------------------------
+FOUND 9 ERRORS AFFECTING 8 LINES
+--------------------------------------------------------------------------------
+  18 | ERROR | [x] Opening brace should be on a new line
+  34 | ERROR | [x] Expected 1 space(s) after SWITCH keyword; 0 found
+  53 | ERROR | [x] Opening brace should be on a new line
+  77 | ERROR | [x] Opening brace should be on a new line
+ 118 | ERROR | [x] Line indented incorrectly; expected 8 spaces, found 9
+ 118 | ERROR | [x] Closing brace indented incorrectly; expected 8 spaces, found
+     |       |     9
+ 132 | ERROR | [x] Opening brace should be on a new line
+ 143 | ERROR | [x] Opening brace should be on a new line
+ 145 | ERROR | [x] Expected 1 space(s) after closing parenthesis; found newline
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 9 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: ...johan\dbwebb-kurser\mvc\me\game\test\DiceHand\DiceHandCreateObjectTest.php
+--------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+--------------------------------------------------------------------------------
+ 71 | ERROR | [x] The closing brace for the class must go on the next line
+    |       |     after the body
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: ...ome\johan\dbwebb-kurser\mvc\me\game\test\Game21\Game21CreateObjectTest.php
+--------------------------------------------------------------------------------
+FOUND 3 ERRORS AFFECTING 2 LINES
+--------------------------------------------------------------------------------
+ 183 | ERROR | [x] Line indented incorrectly; expected 4 spaces, found 2
+ 183 | ERROR | [x] Closing brace indented incorrectly; expected 4 spaces, found
+     |       |     2
+ 185 | ERROR | [x] The closing brace for the class must go on the next line
+     |       |     after the body
+--------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+--------------------------------------------------------------------------------
+
+
+FILE: C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\game\view\yatzy.php
+------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+------------------------------------------------------------------------
+ 9 | ERROR | [x] Header blocks must be separated by a single blank line
+------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+------------------------------------------------------------------------
+
+Time: 1.59 secs; Memory: 8MB
+

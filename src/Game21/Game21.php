@@ -34,21 +34,16 @@ class Game21
             switch($_POST["status"]) {
                 case "Starta spelet":
                     return $this->chooseNrOfDice();
-                    break;
                 case 1:
                 case 2:
                 case "Slå tärning":
                     return $this->playerTurn();
-                    break;
                 case "Stanna":
                     return $this->playerStopped();
-                    break;
                 case "Computer turn":
                     return $this->computerTurn();
-                    break;
                 default:
                     return $this->chooseNrOfDice();
-                    break;
             }
         }
         // if not $_POST is set, return empty string
@@ -117,14 +112,12 @@ class Game21
             ';
         }
 
-        if ($_SESSION["playerScore"] >= 21) {
+        if ($_SESSION["playerScore"] > 21) {
             // if more than 21, game ends and you lose (computer doesn't play)
-            if ($_SESSION["playerScore"] > 21) {
-                 return '<p>SUMMA: ' . $_SESSION["playerScore"] . '</p><p>GAME OVER!</p>';
-             }
-            // if exactly 21
-            if ($_SESSION["playerScore"] == 21) {
-                return '
+            return '<p>SUMMA: ' . $_SESSION["playerScore"] . '</p><p>GAME OVER!</p>';
+         }
+    // if exactly 21
+        return '
                 <p>SLUTPOÄNG: ' . $_SESSION["playerScore"] . '</p><p>GRATTIS!! :)</p>
                 <br><br>
                 <!-- 8. COMPUTER\'s TURN -->
@@ -133,9 +126,8 @@ class Game21
                         type="submit" name="status" value="Computer turn">
                 </form>
                 ';
-            }
-        }
     }
+
 
     public function playerStopped(): string {
         return '
@@ -167,13 +159,11 @@ class Game21
         }
 
         // if computer stopped at or before 21, it means it won over the player
-        if ($_SESSION["computerScore"] <= 21) {
-            return '
-            <p>Computer won with score ' . $_SESSION['computerScore'] . ' vs
-            your score ' . $_SESSION['playerScore'] . '.</p>
-            <p>You rolled ' . $_SESSION['playerRolls'] . ' times.</p>
-            <p>Computer rolled ' . $_SESSION['computerRolls'] . ' times</p>
-            ';
-        }
+        return '
+                <p>Computer won with score ' . $_SESSION['computerScore'] . ' vs
+                your score ' . $_SESSION['playerScore'] . '.</p>
+                <p>You rolled ' . $_SESSION['playerRolls'] . ' times.</p>
+                <p>Computer rolled ' . $_SESSION['computerRolls'] . ' times</p>
+                ';
     }
 }

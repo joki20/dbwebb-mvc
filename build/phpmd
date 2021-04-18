@@ -1,0 +1,5 @@
+C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\game\src\Controller\Session.php:26	Avoid unused local variables such as '$psr17Factory'.
+C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\game\src\DiceHand\DiceHand.php:42	Avoid unused local variables such as '$results'.
+C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\game\src\Yatzy\Yatzy.php:19	The method startGame() has a Cyclomatic Complexity of 45. The configured cyclomatic complexity threshold is 10.
+C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\game\src\Yatzy\Yatzy.php:19	The method startGame() has an NPath complexity of 5904457728. The configured NPath complexity threshold is 200.
+C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\game\src\Yatzy\Yatzy.php:19	The method startGame() has 297 lines of code. Current threshold is set to 100. Avoid really long methods.

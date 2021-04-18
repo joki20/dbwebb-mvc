@@ -24,7 +24,7 @@ PHPUnit 9.5.4 by Sebastian Bergmann and contributors.
                         id="form-roll"
                         >
                 </form>
-                1, 2<p>SUMMA: 3</p>3, 5<p>SUMMA: 11</p><form method="POST" id="form-roll">
+                1, 5<p>SUMMA: 6</p>6, 6<p>SUMMA: 18</p><form method="POST" id="form-roll">
                     <input
                         type="submit"
                         name="status"
@@ -48,12 +48,12 @@ PHPUnit 9.5.4 by Sebastian Bergmann and contributors.
                         id="form-roll"
                         >
                 </form>
-                ..<p>SUMMA: 0</p>.....                          40 / 40 (100%)
+                ..<p>SUMMA: 0</p>......                         41 / 41 (100%)
 
-Time: 00:03.101, Memory: 22.00 MB
+Time: 00:03.230, Memory: 24.00 MB
 
-OK (40 tests, 64 assertions)
+OK (41 tests, 65 assertions)
 
-Generating code coverage report in Clover XML format ... done [00:00.185]
+Generating code coverage report in Clover XML format ... done [00:00.088]
 
-Generating code coverage report in HTML format ... done [00:00.481]
+Generating code coverage report in HTML format ... done [00:00.444]
