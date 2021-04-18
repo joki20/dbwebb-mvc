@@ -26,6 +26,12 @@ class Dice
         return $this->lastRoll;
     }
 
+    // roll dice
+    public function getSides(): int
+    {
+        return $this->sides;
+    }
+
     // getter
     public function getLastRoll(): int
     {
@@ -42,10 +48,3 @@ class Dice
         return "You have a {$this->sides}-sided dice";
     }
 }
-
-// KLASSER
-// * Under ditt eget namespace, skapa följande efter bästa förmåga:
-// * Skapa en klass Dice.
-// * Man skall kunna slå/kasta/rulla tärningen.
-// * Man skall kunna hämta senaste slaget.
-// * Det skall vara konfigurerbart hur många sidor tärningen har.

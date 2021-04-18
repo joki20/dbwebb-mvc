@@ -22,6 +22,12 @@ $router->addRoute("GET", "/", "\Mos20\Controller\Index");
 $router->addRoute("GET", "/debug", "\Mos\Controller\Debug");
 $router->addRoute("GET", "/twig", "\Mos\Controller\TwigView");
 
+$router->addRoute("GET", "/game21", "\Mos\Controller\Game21");
+$router->addRoute("POST", "/game21", "\Mos\Controller\Game21");
+
+$router->addRoute("GET", "/yatzy", "\Mos\Controller\Yatzy");
+$router->addRoute("POST", "/yatzy", "\Mos\Controller\Yatzy");
+
 $router->addGroup("/session", function (RouteCollector $router) {
     $router->addRoute("GET", "", ["\Mos\Controller\Session", "index"]);
     $router->addRoute("GET", "/destroy", ["\Mos\Controller\Session", "destroy"]);
@@ -31,7 +37,10 @@ $router->addGroup("/some", function (RouteCollector $router) {
     $router->addRoute("GET", "/where", ["\Mos\Controller\Sample", "where"]);
 });
 
-
+$router->addGroup("/form", function (RouteCollector $router) {
+    $router->addRoute("GET", "/view", ["\Mos\Controller\Form", "view"]);
+    $router->addRoute("POST", "/process", ["\Mos\Controller\Form", "process"]);
+});
 
 
 
