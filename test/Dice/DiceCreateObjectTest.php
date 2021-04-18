@@ -22,7 +22,7 @@ class DiceCreateObjectTest extends TestCase
     /**
      * Construct object and verify that the sides of dice has been changed
      */
-    public function testChangeSides()
+    public function testCreateObjectChangeSides()
     {
 
         $dice = new Dice();
@@ -37,7 +37,7 @@ class DiceCreateObjectTest extends TestCase
         $this->assertEquals($exp, $res);
     }
 
-    public function testGetLastRoll()
+    public function testCreateObjectGetLastRoll()
     {
         $dice = new Dice();
         $this->assertInstanceOf("\Joki20\Dice\Dice", $dice);

@@ -15,4 +15,4 @@ $message = $message ?? null;
 
 <?php $_SESSION["game21"] = new Game21();
 
-$_SESSION["game21"]->game21();
+echo $_SESSION["game21"]->game21();

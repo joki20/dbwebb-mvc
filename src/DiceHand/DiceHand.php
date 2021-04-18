@@ -31,6 +31,12 @@ class DiceHand extends Dice
     }
 
     // getter
+    public function getDices(): array
+    {
+        return $this->dices; // array to string
+    }
+
+    // getter
     public function getRolls(): string
     {
         $results = "";

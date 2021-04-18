@@ -15,135 +15,165 @@ use function Mos\Functions\url;
  */
 class Game21
 {
-    // start game
-    public function game21()
-    {
-        ?>
-        <form method="POST" id="form-roll">
-            <input
-                type="submit"
-                name="start"
-                value="Starta (om) spelet"
-                id="form-roll"
-                >
-        </form>
-        <?php
+    public function game21(): string {
+        isset($_SESSION["status"]) ? $_SESSION["status"] : $_SESSION["status"] = "start";
 
-        // 1. START GAME
-        if (isset($_POST["start"])) {
-            $_SESSION["status"] = "choose";
-            $_SESSION["playerScore"] = 0;
-            $_SESSION["computerScore"] = 0;
-            $_SESSION["playerRolls"] = 0;
-            $_SESSION["computerRolls"] = 0;
+        $start = '<form method="POST" id="form-roll">
+                    <input
+                        type="submit"
+                        name="status"
+                        value="Starta spelet"
+                        id="form-roll"
+                        >
+                </form>
+                ';
 
-            ?>
-            <!-- 2. CHOOSE 1 OR 2 DICES -->
-            <h2>Välj antal tärningar att spela med</p>
+        echo $start;
 
-            <!-- 1 die -->
-            <form method="POST">
-                <input
-                    type="submit" name="nrDices" value=1>
-            </form>
-            <!-- 2 dice -->
-            <form method="POST">
-                <input
-                    type="submit" name="nrDices" value=2>
-            </form>
+        if (isset($_POST["status"])) {
+            switch($_POST["status"]) {
+                case "Starta spelet":
+                    return $this->chooseNrOfDice();
+                    break;
+                case 1:
+                case 2:
+                case "Slå tärning":
+                    return $this->playerTurn();
+                    break;
+                case "Stanna":
+                    return $this->playerStopped();
+                    break;
+                case "Computer turn":
+                    return $this->computerTurn();
+                    break;
+                default:
+                    return $this->chooseNrOfDice();
+                    break;
+            }
+        }
+        // if not $_POST is set, return empty string
+        return "";
+    }
 
-            <?php
-        // 3. SET NR OF DICES TO DICEHAND
-        } elseif (isset($_POST["nrDices"])) {
-            $nrDices = (int)$_POST["nrDices"];
-            $_SESSION["diceHand"] = new DiceHand($nrDices);
+    public function chooseNrOfDice(): string {
+        $_SESSION["playerScore"] = 0;
+        $_SESSION["computerScore"] = 0;
+        $_SESSION["playerRolls"] = 0;
+        $_SESSION["computerRolls"] = 0;
 
-            ?>
-        <br>
-        <!-- 4. BEGIN ROLLING DICE(S) -->
+        return '
+        <!-- 2. CHOOSE 1 OR 2 DICES -->
+        <h2>Välj antal tärningar att spela med</p>
+
+        <!-- 1 die -->
         <form method="POST">
             <input
-                type="submit" name="roll" value="Rulla tärning">
+                type="submit" name="status" value=1>
         </form>
 
-            <?php
-        // 5. IF ROLL BUTTON IS PRESSED
-        } elseif (isset($_POST["roll"])) {
+        <!-- 2 dice -->
+        <form method="POST">
+            <input
+                type="submit" name="status" value=2>
+        </form>
+        ';
+    }
+
+    public function playerTurn(): string {
+        // if 1 or 2 dice choice, set DiceHand
+        if ($_POST["status"] == 1 || $_POST["status"] == 2) {
+            $nrDices = (int)$_POST["status"];
+            $_SESSION["diceHand"] = new DiceHand($nrDices);
+        }
+
+        // if a roll occurred, show result of roll and add 1 to roll
+        if ($_POST["status"] == "Slå tärning") {
             $rollResult = $_SESSION["diceHand"]->getRolls();
+
             echo $rollResult; // show result of dice
-            $diceArray = explode(", ", $rollResult); // converts string of dice results to array
+
+            $diceArray = explode(", ", $rollResult);
             $_SESSION["playerScore"] += array_sum($diceArray);
             $_SESSION["playerRolls"] += 1;
-            // if sum is not 21 and you haven't stopped
-            if ($_SESSION["playerScore"] < 21) {
-                echo '<p>SUMMA: ' . $_SESSION["playerScore"] . '</p>';
-                ?>
-                <!-- 6. ROLL DICE AGAIN -->
-                <form method="POST">
-                    <input
-                        type="submit" name="roll" value="Rulla tärning">
-                </form>
+        }
 
-                <!-- 7. OR STOP -->
-                <form method="POST">
-                    <input
-                        type="submit" name="stop" value="Stanna">
-                </form>
-                <?php
-            // If either 21 or more, or if you have stopped, do this:
-            } elseif ($_SESSION["playerScore"] >= 21) {
-                // if more than 21, game ends and you lose (computer doesn't play)
-                if ($_SESSION["playerScore"] > 21) {
-                         echo '<p>SUMMA: ' . $_SESSION["playerScore"] . '</p><p>GAME OVER!</p>';
-                // if exactly 21
-                } elseif ($_SESSION["playerScore"] == 21) {
-                    echo '<p>SLUTPOÄNG: ' . $_SESSION["playerScore"] . '</p><p>GRATTIS!! :)</p>';
+        // if score is less than 21, decide if to roll or stop
+        if ($_SESSION["playerScore"] < 21) {
+            echo '<p>SUMMA: ' . $_SESSION["playerScore"] . '</p>';
 
-                    ?>
-                        <br><br>
-                        <!-- 8. COMPUTER's TURN -->
-                        <form method="POST">
-                            <input
-                                type="submit" name="computer" value="Datorn">
-                        </form>
-
-                    <?php
-                }
-            }
-
-          // 7. IF YOU ENDED YOUR TURNN BEFORE 21
-        } elseif (isset($_POST["stop"])) {
-               echo '<p>SLUTPOÄNG: ' . $_SESSION["playerScore"] . '</p><p>Klicka för datorns tur</p>';
-            ?>
-            <br><br>
-            <!-- 8. COMPUTER's TURN -->
+            return '
+            <!-- 6. ROLL DICE -->
             <form method="POST">
                 <input
-                    type="submit" name="computer" value="Datorn">
+                    type="submit" name="status" value="Slå tärning">
             </form>
-            <?php
-        } elseif (isset($_POST["computer"])) {
-            // if computer score is less than your score, continue rolling
-            while ($_SESSION["computerScore"] < $_SESSION["playerScore"]) {
-                $rollResult = $_SESSION["diceHand"]->getRolls();
-                $diceArray = explode(", ", $rollResult); // converts string of dice results to array
-                $_SESSION["computerScore"] += array_sum($diceArray);
-                $_SESSION["computerRolls"] += 1;
-            }
+            <br>
 
-            if ($_SESSION["computerScore"] > 21) {
-                echo "<p>YOU WON with score " . $_SESSION["playerScore"] . ", computer rolled over 21.</p>";
-                echo "<p>You rolled " . $_SESSION["playerRolls"] . " times</p>";
-                // if computer stopped at or before 21, it means it won over the player
-            }
+            <!-- 7. OR STOP -->
+            <form method="POST">
+                <input
+                    type="submit" name="status" value="Stanna">
+            </form>
+            ';
+        }
 
-            if ($_SESSION["computerScore"] <= 21) {
-                echo '<p>Computer won with score ' . $_SESSION["computerScore"] . '
-                vs your score ' . $_SESSION["playerScore"] . '</p>';
-                echo "<p>You rolled " . $_SESSION["playerRolls"] . " times</p>";
-                echo "<p>Computer rolled " . $_SESSION["computerRolls"] . " times</p>";
+        if ($_SESSION["playerScore"] >= 21) {
+            // if more than 21, game ends and you lose (computer doesn't play)
+            if ($_SESSION["playerScore"] > 21) {
+                 return '<p>SUMMA: ' . $_SESSION["playerScore"] . '</p><p>GAME OVER!</p>';
+             }
+            // if exactly 21
+            if ($_SESSION["playerScore"] == 21) {
+                return '
+                <p>SLUTPOÄNG: ' . $_SESSION["playerScore"] . '</p><p>GRATTIS!! :)</p>
+                <br><br>
+                <!-- 8. COMPUTER\'s TURN -->
+                <form method="POST">
+                    <input
+                        type="submit" name="status" value="Computer turn">
+                </form>
+                ';
             }
         }
     }
+
+    public function playerStopped(): string {
+        return '
+            <br><br>
+            <!-- 8. COMPUTER\'s TURN -->
+            <form method="POST">
+                <input
+                    type="submit" name="status" value="Computer turn">
+            </form>
+        ';
+    }
+
+    public function computerTurn(): string {
+        // if computer score is less than your score, continue rolling
+        while ($_SESSION["computerScore"] < $_SESSION["playerScore"])
+        {
+            $rollResult = $_SESSION["diceHand"]->getRolls();
+            $diceArray = explode(", ", $rollResult); // converts string of dice results to array
+            $_SESSION["computerScore"] += array_sum($diceArray);
+            $_SESSION["computerRolls"] += 1;
+        }
+
+        if ($_SESSION["computerScore"] > 21) {
+            return '
+            YOU WON with score ' . $_SESSION["playerScore"] . ',
+            computer rolled over 21.</p>
+            <p>You rolled ' . $_SESSION["playerRolls"] . ' times</p>
+            ';
+        }
+
+        // if computer stopped at or before 21, it means it won over the player
+        if ($_SESSION["computerScore"] <= 21) {
+            return '
+            <p>Computer won with score ' . $_SESSION['computerScore'] . ' vs
+            your score ' . $_SESSION['playerScore'] . '.</p>
+            <p>You rolled ' . $_SESSION['playerRolls'] . ' times.</p>
+            <p>Computer rolled ' . $_SESSION['computerRolls'] . ' times</p>
+            ';
+        }
+    }
 }
-?>

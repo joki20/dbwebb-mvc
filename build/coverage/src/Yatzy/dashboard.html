@@ -2,7 +2,7 @@
 <html lang="en">
  <head>
   <meta charset="UTF-8">
-  <title>Dashboard for C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\game\src\Controller</title>
+  <title>Dashboard for C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\game\src\Yatzy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="../../_css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <link href="../../_css/nv.d3.min.css" rel="stylesheet" type="text/css">
@@ -18,7 +18,7 @@
        <ol class="breadcrumb">
          <li class="breadcrumb-item"><a href="../../index.html">C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\game</a></li>
          <li class="breadcrumb-item"><a href="../index.html">src</a></li>
-         <li class="breadcrumb-item"><a href="index.html">Controller</a></li>
+         <li class="breadcrumb-item"><a href="index.html">Yatzy</a></li>
          <li class="breadcrumb-item active">(Dashboard)</li>
 
        </ol>
@@ -59,10 +59,7 @@
         </tr>
        </thead>
        <tbody>
-       <tr><td><a href="Dice.php.html#15">Mos\Controller\Dice</a></td><td class="text-right">0%</td></tr>
-       <tr><td><a href="Game21.php.html#15">Mos\Controller\Game21</a></td><td class="text-right">0%</td></tr>
-       <tr><td><a href="Yatzy.php.html#15">Mos\Controller\Yatzy</a></td><td class="text-right">0%</td></tr>
-       <tr><td><a href="ControllerTrait.php.html#15">Mos\Controller\ControllerTrait</a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="Yatzy.php.html#16">Joki20\Yatzy\Yatzy</a></td><td class="text-right">0%</td></tr>
 
        </tbody>
       </table>
@@ -79,7 +76,7 @@
         </tr>
        </thead>
        <tbody>
-       <tr><td><a href="Dice.php.html#15">Mos\Controller\Dice</a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Yatzy.php.html#16">Joki20\Yatzy\Yatzy</a></td><td class="text-right">2070</td></tr>
 
        </tbody>
       </table>
@@ -117,13 +114,7 @@
         </tr>
        </thead>
        <tbody>
-       <tr><td><a href="Dice.php.html#23"><abbr title="Mos\Controller\Dice::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
-       <tr><td><a href="Dice.php.html#30"><abbr title="Mos\Controller\Dice::roll">roll</abbr></a></td><td class="text-right">0%</td></tr>
-       <tr><td><a href="Dice.php.html#37"><abbr title="Mos\Controller\Dice::getLastRoll">getLastRoll</abbr></a></td><td class="text-right">0%</td></tr>
-       <tr><td><a href="Dice.php.html#43"><abbr title="Mos\Controller\Dice::changeSides">changeSides</abbr></a></td><td class="text-right">0%</td></tr>
-       <tr><td><a href="Game21.php.html#19"><abbr title="Mos\Controller\Game21::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
-       <tr><td><a href="Yatzy.php.html#19"><abbr title="Mos\Controller\Yatzy::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
-       <tr><td><a href="ControllerTrait.php.html#28"><abbr title="Mos\Controller\ControllerTrait::redirect">redirect</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Yatzy.php.html#19"><abbr title="Joki20\Yatzy\Yatzy::startGame">startGame</abbr></a></td><td class="text-right">0%</td></tr>
 
        </tbody>
       </table>
@@ -140,7 +131,7 @@
         </tr>
        </thead>
        <tbody>
-       <tr><td><a href="Dice.php.html#43"><abbr title="Mos\Controller\Dice::changeSides">changeSides</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Yatzy.php.html#19"><abbr title="Joki20\Yatzy\Yatzy::startGame">startGame</abbr></a></td><td class="text-right">2070</td></tr>
 
        </tbody>
       </table>
@@ -169,7 +160,7 @@ $(document).ready(function() {
       .yAxis.tickFormat(d3.format('d'));
 
     d3.select('#classCoverageDistribution svg')
-      .datum(getCoverageDistributionData([3,0,0,0,0,0,1,0,0,0,0,7], "Class Coverage"))
+      .datum(getCoverageDistributionData([1,0,0,0,0,0,0,0,0,0,0,0], "Class Coverage"))
       .transition().duration(500).call(chart);
 
     nv.utils.windowResize(chart.update);
@@ -187,7 +178,7 @@ $(document).ready(function() {
       .yAxis.tickFormat(d3.format('d'));
 
     d3.select('#methodCoverageDistribution svg')
-      .datum(getCoverageDistributionData([7,0,0,0,0,0,0,0,0,0,0,11], "Method Coverage"))
+      .datum(getCoverageDistributionData([1,0,0,0,0,0,0,0,0,0,0,0], "Method Coverage"))
       .transition().duration(500).call(chart);
 
     nv.utils.windowResize(chart.update);
@@ -237,7 +228,7 @@ $(document).ready(function() {
     chart.yAxis.axisLabel('Cyclomatic Complexity');
 
     d3.select('#classComplexity svg')
-      .datum(getComplexityData([[100,1,"<a href=\"Debug.php.html#17\">Mos\\Controller\\Debug<\/a>"],[0,5,"<a href=\"Dice.php.html#15\">Mos\\Controller\\Dice<\/a>"],[100,2,"<a href=\"Error.php.html#15\">Mos\\Controller\\Error<\/a>"],[100,2,"<a href=\"Form.php.html#19\">Mos\\Controller\\Form<\/a>"],[0,1,"<a href=\"Game21.php.html#15\">Mos\\Controller\\Game21<\/a>"],[100,1,"<a href=\"Index.php.html#15\">Mos\\Controller\\Index<\/a>"],[100,1,"<a href=\"Sample.php.html#15\">Mos\\Controller\\Sample<\/a>"],[100,2,"<a href=\"Session.php.html#20\">Mos\\Controller\\Session<\/a>"],[100,1,"<a href=\"TwigView.php.html#15\">Mos\\Controller\\TwigView<\/a>"],[0,1,"<a href=\"Yatzy.php.html#15\">Mos\\Controller\\Yatzy<\/a>"],[50,2,"<a href=\"ControllerTrait.php.html#15\">Mos\\Controller\\ControllerTrait<\/a>"]], 'Class Complexity'))
+      .datum(getComplexityData([[0,45,"<a href=\"Yatzy.php.html#16\">Joki20\\Yatzy\\Yatzy<\/a>"]], 'Class Complexity'))
       .transition()
       .duration(500)
       .call(chart);
@@ -261,7 +252,7 @@ $(document).ready(function() {
     chart.yAxis.axisLabel('Method Complexity');
 
     d3.select('#methodComplexity svg')
-      .datum(getComplexityData([[100,1,"<a href=\"Debug.php.html#21\">Mos\\Controller\\Debug::__invoke<\/a>"],[0,1,"<a href=\"Dice.php.html#23\">Mos\\Controller\\Dice::__construct<\/a>"],[0,1,"<a href=\"Dice.php.html#30\">Mos\\Controller\\Dice::roll<\/a>"],[0,1,"<a href=\"Dice.php.html#37\">Mos\\Controller\\Dice::getLastRoll<\/a>"],[0,2,"<a href=\"Dice.php.html#43\">Mos\\Controller\\Dice::changeSides<\/a>"],[100,1,"<a href=\"Error.php.html#17\">Mos\\Controller\\Error::do404<\/a>"],[100,1,"<a href=\"Error.php.html#35\">Mos\\Controller\\Error::do405<\/a>"],[100,1,"<a href=\"Form.php.html#23\">Mos\\Controller\\Form::view<\/a>"],[100,1,"<a href=\"Form.php.html#38\">Mos\\Controller\\Form::process<\/a>"],[0,1,"<a href=\"Game21.php.html#19\">Mos\\Controller\\Game21::__invoke<\/a>"],[100,1,"<a href=\"Index.php.html#19\">Mos\\Controller\\Index::__invoke<\/a>"],[100,1,"<a href=\"Sample.php.html#19\">Mos\\Controller\\Sample::where<\/a>"],[100,1,"<a href=\"Session.php.html#24\">Mos\\Controller\\Session::index<\/a>"],[100,1,"<a href=\"Session.php.html#35\">Mos\\Controller\\Session::destroy<\/a>"],[100,1,"<a href=\"TwigView.php.html#19\">Mos\\Controller\\TwigView::__invoke<\/a>"],[0,1,"<a href=\"Yatzy.php.html#19\">Mos\\Controller\\Yatzy::__invoke<\/a>"],[100,1,"<a href=\"ControllerTrait.php.html#17\">Mos\\Controller\\ControllerTrait::response<\/a>"],[0,1,"<a href=\"ControllerTrait.php.html#28\">Mos\\Controller\\ControllerTrait::redirect<\/a>"]], 'Method Complexity'))
+      .datum(getComplexityData([[0,45,"<a href=\"Yatzy.php.html#19\">Joki20\\Yatzy\\Yatzy::startGame<\/a>"]], 'Method Complexity'))
       .transition()
       .duration(500)
       .call(chart);

@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Joki20\GraphicalDice;
 
+use Joki20\GraphicalDice\GraphicalDice;
 use Joki20\Dice\Dice;
 
 /**
