@@ -58,6 +58,20 @@ PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 ---------------------------------------------------------------------------------------------
 
 
+FILE: C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\game\test\Yatzy\YatzyCreateObjectTest.php
+------------------------------------------------------------------------------------------------------------------
+FOUND 4 ERRORS AFFECTING 4 LINES
+------------------------------------------------------------------------------------------------------------------
+  45 | ERROR | [x] Opening brace should be on a new line
+  48 | ERROR | [x] Parentheses must be used when instantiating a new class
+  75 | ERROR | [x] Opening brace should be on a new line
+ 115 | ERROR | [x] Function closing brace must go on the next line following the body; found 1 blank lines before
+     |       |     brace
+------------------------------------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 4 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+------------------------------------------------------------------------------------------------------------------
+
+
 FILE: C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\game\view\yatzy.php
 ------------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
@@ -67,5 +81,5 @@ FOUND 1 ERROR AFFECTING 1 LINE
 PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 ------------------------------------------------------------------------
 
-Time: 1.44 secs; Memory: 8MB
+Time: 1.7 secs; Memory: 8MB
 

@@ -13,7 +13,7 @@ use function Mos\Functions\url;
 /**
  * Class Game21.
  */
-class Yatzy
+class Yatzy extends DiceHand
 {
     private array $numbers = ["Ettor","Tvåor","Treor","Fyror","Femmor","Sexor"];
 
