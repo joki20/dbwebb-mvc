@@ -24,7 +24,7 @@ PHPUnit 9.5.4 by Sebastian Bergmann and contributors.
                         id="form-roll"
                         >
                 </form>
-                6, 4<p>SUMMA: 10</p>2, 1<p>SUMMA: 13</p><form method="POST" id="form-roll">
+                5, 2<p>SUMMA: 7</p>5, 5<p>SUMMA: 17</p><form method="POST" id="form-roll">
                     <input
                         type="submit"
                         name="status"
@@ -152,128 +152,10 @@ PHPUnit 9.5.4 by Sebastian Bergmann and contributors.
                 <form method="POST">
                     <table>
                         <tr>
+                <td><p class=dice-utf8><i class=dice-6></i></p></td>
                 <td><p class=dice-utf8><i class=dice-3></i></p></td>
                 <td><p class=dice-utf8><i class=dice-1></i></p></td>
-                <td><p class=dice-utf8><i class=dice-4></i></p></td>
                 <td><p class=dice-utf8><i class=dice-2></i></p></td>
-                <td><p class=dice-utf8><i class=dice-6></i></p></td></tr>
-                        <tr>
-            <td>
-                <input type=checkbox name=Sparade[] value=0>
-            </td>
-            <td>
-                <input type=checkbox name=Sparade[] value=1>
-            </td>
-            <td>
-                <input type=checkbox name=Sparade[] value=2>
-            </td>
-            <td>
-                <input type=checkbox name=Sparade[] value=3>
-            </td>
-            <td>
-                <input type=checkbox name=Sparade[] value=4>
-            </td></tr>
-                    </table> <input type="submit" name="status" value="Slå tärningar">
-               <br>
-                </form>
-            
-            <form method="POST">
-                <table>
-                    <tr>
-                        <th>Val</th>
-                        <th>Alternativ</th>
-                        <th>Poäng</th>
-                    </tr>
-                    
-                <tr>
-                    <td>
-                    <input
-                        type="radio"
-                        name="choice"
-                        value="Ettor" 
-                    </td>
-                    <td>Ettor</td>
-                    <td>   </td>
-                </tr>
-                
-                <tr>
-                    <td>
-                    <input
-                        type="radio"
-                        name="choice"
-                        value="Tvåor" 
-                    </td>
-                    <td>Tvåor</td>
-                    <td>   </td>
-                </tr>
-                
-                <tr>
-                    <td>
-                    <input
-                        type="radio"
-                        name="choice"
-                        value="Treor" 
-                    </td>
-                    <td>Treor</td>
-                    <td>   </td>
-                </tr>
-                
-                <tr>
-                    <td>
-                    <input
-                        type="radio"
-                        name="choice"
-                        value="Fyror" 
-                    </td>
-                    <td>Fyror</td>
-                    <td>   </td>
-                </tr>
-                
-                <tr>
-                    <td>
-                    <input
-                        type="radio"
-                        name="choice"
-                        value="Femmor" 
-                    </td>
-                    <td>Femmor</td>
-                    <td>   </td>
-                </tr>
-                
-                <tr>
-                    <td>
-                    <input
-                        type="radio"
-                        name="choice"
-                        value="Sexor" 
-                    </td>
-                    <td>Sexor</td>
-                    <td>   </td>
-                </tr>
-                
-                    <tr><td>Bonus</td><td></td></tr>
-                    <tr><td>Summa</td><td></td></tr>
-                </table>
-                <input type="submit" name="status" value="Score">
-            </form>
-            
-                <!-- Start game -->
-                <form method="POST" id="form-roll">
-                    <input
-                        type="submit"
-                        name="status"
-                        value="Nytt spel"
-                        id="form-roll"
-                    >
-                </form>
-        
-                <form method="POST">
-                    <table>
-                        <tr>
-                <td><p class=dice-utf8><i class=dice-3></i></p></td>
-                <td><p class=dice-utf8><i class=dice-2></i></p></td>
-                <td><p class=dice-utf8><i class=dice-5></i></p></td>
-                <td><p class=dice-utf8><i class=dice-6></i></p></td>
                 <td><p class=dice-utf8><i class=dice-3></i></p></td></tr>
                         <tr>
             <td>
@@ -388,11 +270,11 @@ PHPUnit 9.5.4 by Sebastian Bergmann and contributors.
                 <form method="POST">
                     <table>
                         <tr>
-                <td><p class=dice-utf8><i class=dice-4></i></p></td>
-                <td><p class=dice-utf8><i class=dice-4></i></p></td>
-                <td><p class=dice-utf8><i class=dice-4></i></p></td>
+                <td><p class=dice-utf8><i class=dice-5></i></p></td>
+                <td><p class=dice-utf8><i class=dice-1></i></p></td>
                 <td><p class=dice-utf8><i class=dice-2></i></p></td>
-                <td><p class=dice-utf8><i class=dice-2></i></p></td></tr>
+                <td><p class=dice-utf8><i class=dice-4></i></p></td>
+                <td><p class=dice-utf8><i class=dice-5></i></p></td></tr>
                         <tr>
             <td>
                 <input type=checkbox name=Sparade[] value=0>
@@ -426,10 +308,10 @@ PHPUnit 9.5.4 by Sebastian Bergmann and contributors.
                     <input
                         type="radio"
                         name="choice"
-                        value="Ettor"  disabled 
+                        value="Ettor" 
                     </td>
                     <td>Ettor</td>
-                    <td> 0  </td>
+                    <td>   </td>
                 </tr>
                 
                 <tr>
@@ -488,16 +370,134 @@ PHPUnit 9.5.4 by Sebastian Bergmann and contributors.
                 </tr>
                 
                     <tr><td>Bonus</td><td></td></tr>
-                    <tr><td>Summa</td><td>0</td></tr>
+                    <tr><td>Summa</td><td></td></tr>
+                </table>
+                <input type="submit" name="status" value="Score">
+            </form>
+            
+                <!-- Start game -->
+                <form method="POST" id="form-roll">
+                    <input
+                        type="submit"
+                        name="status"
+                        value="Nytt spel"
+                        id="form-roll"
+                    >
+                </form>
+        
+                <form method="POST">
+                    <table>
+                        <tr>
+                <td><p class=dice-utf8><i class=dice-4></i></p></td>
+                <td><p class=dice-utf8><i class=dice-6></i></p></td>
+                <td><p class=dice-utf8><i class=dice-1></i></p></td>
+                <td><p class=dice-utf8><i class=dice-3></i></p></td>
+                <td><p class=dice-utf8><i class=dice-2></i></p></td></tr>
+                        <tr>
+            <td>
+                <input type=checkbox name=Sparade[] value=0>
+            </td>
+            <td>
+                <input type=checkbox name=Sparade[] value=1>
+            </td>
+            <td>
+                <input type=checkbox name=Sparade[] value=2>
+            </td>
+            <td>
+                <input type=checkbox name=Sparade[] value=3>
+            </td>
+            <td>
+                <input type=checkbox name=Sparade[] value=4>
+            </td></tr>
+                    </table> <input type="submit" name="status" value="Slå tärningar">
+               <br>
+                </form>
+            
+            <form method="POST">
+                <table>
+                    <tr>
+                        <th>Val</th>
+                        <th>Alternativ</th>
+                        <th>Poäng</th>
+                    </tr>
+                    
+                <tr>
+                    <td>
+                    <input
+                        type="radio"
+                        name="choice"
+                        value="Ettor"  disabled 
+                    </td>
+                    <td>Ettor</td>
+                    <td> 1  </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                    <input
+                        type="radio"
+                        name="choice"
+                        value="Tvåor" 
+                    </td>
+                    <td>Tvåor</td>
+                    <td>   </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                    <input
+                        type="radio"
+                        name="choice"
+                        value="Treor" 
+                    </td>
+                    <td>Treor</td>
+                    <td>   </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                    <input
+                        type="radio"
+                        name="choice"
+                        value="Fyror" 
+                    </td>
+                    <td>Fyror</td>
+                    <td>   </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                    <input
+                        type="radio"
+                        name="choice"
+                        value="Femmor" 
+                    </td>
+                    <td>Femmor</td>
+                    <td>   </td>
+                </tr>
+                
+                <tr>
+                    <td>
+                    <input
+                        type="radio"
+                        name="choice"
+                        value="Sexor" 
+                    </td>
+                    <td>Sexor</td>
+                    <td>   </td>
+                </tr>
+                
+                    <tr><td>Bonus</td><td></td></tr>
+                    <tr><td>Summa</td><td>1</td></tr>
                 </table>
                 <input type="submit" name="status" value="Score">
             </form>
             ..                       43 / 43 (100%)
 
-Time: 00:03.087, Memory: 24.00 MB
+Time: 00:04.511, Memory: 24.00 MB
 
 OK (43 tests, 79 assertions)
 
-Generating code coverage report in Clover XML format ... done [00:00.071]
+Generating code coverage report in Clover XML format ... done [00:00.169]
 
-Generating code coverage report in HTML format ... done [00:00.458]
+Generating code coverage report in HTML format ... done [00:01.057]

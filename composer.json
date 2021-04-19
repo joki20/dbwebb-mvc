@@ -1,4 +1,13 @@
 {
+    "name": "mos/phpunit-test",
+    "description": "To start get going with unittesting and phpunit.",
+    "license": "MIT",
+    "authors": [
+            {
+                "name": "Johan Kristoffersson",
+                "email": "joki20@student.bth.se"
+            }
+    ],
     "autoload": {
         "psr-4": {
             "Mos\\": "src/",

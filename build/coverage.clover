@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1618783562">
-  <project timestamp="1618783562">
+<coverage generated="1618820892">
+  <project timestamp="1618820892">
     <file name="C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\game\config\bootstrap.php">
       <line num="10" type="stmt" count="1"/>
       <line num="11" type="stmt" count="1"/>
@@ -278,12 +278,12 @@
       <line num="147" type="stmt" count="1"/>
       <line num="148" type="stmt" count="1"/>
       <line num="151" type="stmt" count="2"/>
-      <line num="153" type="stmt" count="1"/>
-      <line num="155" type="stmt" count="1"/>
-      <line num="161" type="stmt" count="2"/>
-      <line num="162" type="stmt" count="2"/>
-      <line num="163" type="stmt" count="2"/>
-      <line num="164" type="stmt" count="2"/>
+      <line num="153" type="stmt" count="2"/>
+      <line num="155" type="stmt" count="2"/>
+      <line num="161" type="stmt" count="1"/>
+      <line num="162" type="stmt" count="1"/>
+      <line num="163" type="stmt" count="1"/>
+      <line num="164" type="stmt" count="1"/>
       <metrics loc="167" ncloc="154" classes="1" methods="5" coveredmethods="5" conditionals="0" coveredconditionals="0" statements="49" coveredstatements="49" elements="54" coveredelements="54"/>
     </file>
     <file name="C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\game\src\GraphicalDice\GraphicalDice.php">

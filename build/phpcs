@@ -18,58 +18,61 @@ PHPCBF CAN FIX THE 9 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 
 
 FILE: C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\game\src\Yatzy\Yatzy.php
-------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
 FOUND 9 ERRORS AFFECTING 8 LINES
-------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
   58 | ERROR | [x] Expected 1 space(s) after SWITCH keyword; 0 found
   67 | ERROR | [x] Line indented incorrectly; expected 16 spaces, found 20
-  71 | ERROR | [x] Terminating statement must be indented to the same level as the CASE body
+  71 | ERROR | [x] Terminating statement must be indented to the same level as the
+     |       |     CASE body
  118 | ERROR | [x] Opening brace should be on a new line
  133 | ERROR | [x] Opening brace should be on a new line
- 193 | ERROR | [x] Function closing brace must go on the next line following the body; found 1 blank lines before
-     |       |     brace
+ 193 | ERROR | [x] Function closing brace must go on the next line following the
+     |       |     body; found 1 blank lines before brace
  195 | ERROR | [x] Opening brace should be on a new line
  243 | ERROR | [x] Line indented incorrectly; expected 4 spaces, found 5
  243 | ERROR | [x] Closing brace indented incorrectly; expected 4 spaces, found 5
-------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
 PHPCBF CAN FIX THE 9 MARKED SNIFF VIOLATIONS AUTOMATICALLY
-------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
 
 
-FILE: C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\game\test\DiceHand\DiceHandCreateObjectTest.php
--------------------------------------------------------------------------------------------------
+FILE: ...ome\johan\dbwebb-kurser\mvc\me\game\test\DiceHand\DiceHandCreateObjectTest.php
+------------------------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
--------------------------------------------------------------------------------------------------
- 71 | ERROR | [x] The closing brace for the class must go on the next line after the body
--------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+ 71 | ERROR | [x] The closing brace for the class must go on the next line after
+    |       |     the body
+------------------------------------------------------------------------------------
 PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
--------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
 
 
-FILE: C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\game\test\Game21\Game21CreateObjectTest.php
----------------------------------------------------------------------------------------------
+FILE: ...64\home\johan\dbwebb-kurser\mvc\me\game\test\Game21\Game21CreateObjectTest.php
+------------------------------------------------------------------------------------
 FOUND 3 ERRORS AFFECTING 2 LINES
----------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
  183 | ERROR | [x] Line indented incorrectly; expected 4 spaces, found 2
  183 | ERROR | [x] Closing brace indented incorrectly; expected 4 spaces, found 2
- 185 | ERROR | [x] The closing brace for the class must go on the next line after the body
----------------------------------------------------------------------------------------------
+ 185 | ERROR | [x] The closing brace for the class must go on the next line after
+     |       |     the body
+------------------------------------------------------------------------------------
 PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
----------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
 
 
-FILE: C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\game\test\Yatzy\YatzyCreateObjectTest.php
-------------------------------------------------------------------------------------------------------------------
+FILE: ...in64\home\johan\dbwebb-kurser\mvc\me\game\test\Yatzy\YatzyCreateObjectTest.php
+------------------------------------------------------------------------------------
 FOUND 4 ERRORS AFFECTING 4 LINES
-------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
   45 | ERROR | [x] Opening brace should be on a new line
   48 | ERROR | [x] Parentheses must be used when instantiating a new class
   75 | ERROR | [x] Opening brace should be on a new line
- 115 | ERROR | [x] Function closing brace must go on the next line following the body; found 1 blank lines before
-     |       |     brace
-------------------------------------------------------------------------------------------------------------------
+ 115 | ERROR | [x] Function closing brace must go on the next line following the
+     |       |     body; found 1 blank lines before brace
+------------------------------------------------------------------------------------
 PHPCBF CAN FIX THE 4 MARKED SNIFF VIOLATIONS AUTOMATICALLY
-------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
 
 
 FILE: C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\game\view\yatzy.php
@@ -81,5 +84,5 @@ FOUND 1 ERROR AFFECTING 1 LINE
 PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
 ------------------------------------------------------------------------
 
-Time: 1.7 secs; Memory: 8MB
+Time: 1.99 secs; Memory: 8MB
 
