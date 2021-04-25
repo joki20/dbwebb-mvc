@@ -10,9 +10,6 @@ use App\Http\Controllers\Yatzy; // class Yatzy
 
 ?>
 
-@extends('layouts.app')
-@section('content')
-
 <h1>Yatzy</h1>
 
 <?php session(['yatzy' => new Yatzy()]);
@@ -20,5 +17,3 @@ use App\Http\Controllers\Yatzy; // class Yatzy
 echo session('yatzy')->yatzy();
 
 ?>
-
-@endsection

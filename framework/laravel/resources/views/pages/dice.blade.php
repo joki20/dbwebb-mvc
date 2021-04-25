@@ -12,9 +12,6 @@ $message = $message ?? null;
 
 ?>
 
-@extends('layouts.app')
-@section('content')
-
 <h1><?= $header ?></h1>
 
 <?php session(['dice' => new Dice()]);
@@ -22,5 +19,3 @@ $message = $message ?? null;
 echo session('dice')->roll();
 
 ?>
-
-@endsection

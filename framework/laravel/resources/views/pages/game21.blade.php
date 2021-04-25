@@ -9,9 +9,6 @@ use App\Http\Controllers\Game21;
 
 ?>
 
-@extends('layouts.app')
-@section('content')
-
 <h1>Game 21</h1>
 
 <?php session(['game21' => new Game21()]);
@@ -19,5 +16,3 @@ use App\Http\Controllers\Game21;
 echo session('game21')->game21();
 
 ?>
-
-@endsection
