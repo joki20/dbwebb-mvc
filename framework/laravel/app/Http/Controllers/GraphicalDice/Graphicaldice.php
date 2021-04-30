@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Http\Controllers;
+namespace Joki20\Http\Controllers\GraphicalDice;
 
-use App\Http\Controllers\Dice;
+use Joki20\Http\Controllers\Dice\Dice;
 
 /**
  * Class Dice.

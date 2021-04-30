@@ -5,7 +5,7 @@
 
 declare(strict_types=1);
 
-use App\Http\Controllers\Game21;
+use Joki20\Http\Controllers\Game21\Game21;
 
 ?>
 

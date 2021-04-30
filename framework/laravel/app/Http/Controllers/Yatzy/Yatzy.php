@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace App\Http\Controllers;
+namespace Joki20\Http\Controllers\Yatzy;
 
-use App\Http\Controllers\Dice;
-use App\Http\Controllers\GraphicalDice;
-use App\Http\Controllers\DiceHand;
+use Joki20\Http\Controllers\Dice\Dice;
+use Joki20\Http\Controllers\GraphicalDice\GraphicalDice;
+use Joki20\Http\Controllers\DiceHand\DiceHand;
 
 /**
  * Class Game21.

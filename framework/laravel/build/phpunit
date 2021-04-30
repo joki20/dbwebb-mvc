@@ -1,0 +1,58 @@
+PHPUnit 9.5.4 by Sebastian Bergmann and contributors.
+
+.........E<form method="POST" id="form-roll">
+                    <input
+                        type="submit"
+                        name="status"
+                        value="Starta spelet"
+                        id="form-roll"
+                        >
+                </form>
+                <form method="POST" id="form-roll">
+                    <input
+                        type="submit"
+                        name="status"
+                        value="Starta spelet"
+                        id="form-roll"
+                        >
+                </form>
+                ...                                                     13 / 13 (100%)
+
+Time: 00:04.490, Memory: 36.00 MB
+
+There was 1 error:
+
+1) Tests\Unit\Game21CreateObjectTest::testCreateGame21
+Illuminate\Contracts\Container\BindingResolutionException: Target class [session] does not exist.
+
+C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\framework\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php:835
+C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\framework\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php:714
+C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\framework\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php:841
+C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\framework\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php:652
+C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\framework\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php:826
+C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\framework\laravel\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php:119
+C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\framework\laravel\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php:770
+C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\framework\laravel\app\Http\Controllers\Game21.php:52
+C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\framework\laravel\app\Http\Controllers\Game21.php:34
+C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\framework\laravel\tests\Unit\Game21CreateObjectTest.php:28
+
+Caused by
+ReflectionException: Class session does not exist
+
+C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\framework\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php:833
+C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\framework\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php:714
+C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\framework\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php:841
+C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\framework\laravel\vendor\laravel\framework\src\Illuminate\Container\Container.php:652
+C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\framework\laravel\vendor\laravel\framework\src\Illuminate\Foundation\Application.php:826
+C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\framework\laravel\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php:119
+C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\framework\laravel\vendor\laravel\framework\src\Illuminate\Foundation\helpers.php:770
+C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\framework\laravel\app\Http\Controllers\Game21.php:52
+C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\framework\laravel\app\Http\Controllers\Game21.php:34
+C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\framework\laravel\tests\Unit\Game21CreateObjectTest.php:28
+
+ERRORS!
+Tests: 13, Assertions: 23, Errors: 1.
+
+Generating code coverage report in Clover XML format ... done [00:01.615]
+
+Generating code coverage report in HTML format ... done [00:01.871]

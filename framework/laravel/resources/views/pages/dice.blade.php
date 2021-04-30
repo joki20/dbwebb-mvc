@@ -5,7 +5,7 @@
 
 declare(strict_types=1);
 
-use App\Http\Controllers\Dice;
+use Joki20\Http\Controllers\Dice\Dice;
 
 $header = $header ?? null;
 $message = $message ?? null;

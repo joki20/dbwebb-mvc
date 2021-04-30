@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 // Folder \Controllers containing classes
-namespace App\Http\Controllers;
+namespace Joki20\Http\Controllers\Dice;
 
 
 /**
