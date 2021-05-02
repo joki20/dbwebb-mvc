@@ -25,7 +25,7 @@ INSERT INTO books (title, isbn, author, image) VALUES ('HC Andersens bästa sago
 -- ----------------------------------------
 
 --
--- Books table
+-- Highscores table
 -- 
 DROP TABLE IF EXISTS highscores;
 CREATE TABLE IF NOT EXISTS highscores 
