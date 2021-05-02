@@ -8,6 +8,8 @@ use Joki20\Http\Controllers\Dice\Dice;
 use Joki20\Http\Controllers\GraphicalDice\GraphicalDice;
 use Joki20\Http\Controllers\DiceHand\DiceHand;
 
+use Joki20\Models\HighScore; // Book class
+
 /**
  * Class Game21.
  */
@@ -251,6 +253,17 @@ class Yatzy extends DiceHand
         }
 
          session()->put('sum', session('sum') + session('bonus'));
+
+         // if end of game, add points to highscore table
+         if (session('timesScored') == 6) {
+             // create Highscore instance
+             $highscores = new Highscore;
+             // insert score
+             $highscores->score = session('sum');
+             // save to db
+             $highscores->save();
+
+         }
 
          return '
                  <br>
