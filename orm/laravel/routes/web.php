@@ -59,6 +59,10 @@ Route::get('/books', function() {
     return view('books');
 });
 
+Route::get('/highscore', function() {
+    return view('highscore');
+});
+
 Route::get('/message', function () {
     return view('message');
 });

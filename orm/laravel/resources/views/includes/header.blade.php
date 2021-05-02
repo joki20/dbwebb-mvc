@@ -25,7 +25,8 @@ declare(strict_types=1);
         <a href="<?= url("/dice") ?>">Dice</a> |
         <a href="<?= url("/game21") ?>">Game 21</a> |
         <a href="<?= url("/yatzy") ?>">Yatzy</a> |
-        <a href="<?= url("/books") ?>">Books</a>
+        <a href="<?= url("/books") ?>">Books</a> |
+        <a href="<?= url("/highscore") ?>">Highscore</a>
     </nav>
 </header>
 <main>

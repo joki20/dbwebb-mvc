@@ -10,3 +10,32 @@ use Joki20\Models\Highscore; // Book class
 ?>
 
 <h1>Yatzy Highscore</h1>
+
+<?php
+
+$highscores = Highscore::all();
+
+$scoreDesc = $highscores->sortByDesc('score');
+
+
+
+
+?>
+
+<table id="books">
+    <thead>
+        <tr>
+            <th>Score</th>
+        </tr>
+    </thead>
+    <tbody>
+<?php
+
+foreach (Highscore::with('score')->get() as $result)
+{ ?>
+    <tr>
+        <td><?= $result->score ?></td>
+    </tr>
+<?php }; ?>
+    </tbody>
+</table>
