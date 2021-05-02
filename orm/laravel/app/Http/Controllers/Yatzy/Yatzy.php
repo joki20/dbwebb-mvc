@@ -7,7 +7,7 @@ namespace Joki20\Http\Controllers\Yatzy;
 use Joki20\Http\Controllers\Dice\Dice;
 use Joki20\Http\Controllers\GraphicalDice\GraphicalDice;
 use Joki20\Http\Controllers\DiceHand\DiceHand;
-use Joki20\Models\HighScore;
+use Joki20\Models\Highscore;
 
 // Book class
 
