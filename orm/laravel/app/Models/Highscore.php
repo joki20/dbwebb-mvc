@@ -10,4 +10,7 @@ class Highscore extends Model
     use HasFactory;
 
     protected $table = 'highscores';
+
+    // disable timestamp columns created_at and updated_at
+    public $timestamps = false;
 }

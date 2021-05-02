@@ -25,16 +25,16 @@ $scoreDesc = $highscores->sortByDesc('score');
 <table id="books">
     <thead>
         <tr>
-            <th>Score</th>
+            <th>Highscore list</th>
         </tr>
     </thead>
     <tbody>
 <?php
 
-foreach (Highscore::with('score')->get() as $result)
+foreach ($scoreDesc as $row)
 { ?>
     <tr>
-        <td><?= $result->score ?></td>
+        <td><?= $row->score ?></td>
     </tr>
 <?php }; ?>
     </tbody>
