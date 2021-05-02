@@ -38,28 +38,28 @@ Route::get('/', function () {
 Route::get('/info', function () {
     return view('info');
 });
-Route::get('/dice', function() {
+Route::get('/dice', function () {
     return view('dice');
 });
-Route::get('/game21', function() {
+Route::get('/game21', function () {
     return view('game21');
 });
 Route::post('/game21', function () {
     return view('game21');
 });
 
-Route::get('/yatzy', function() {
+Route::get('/yatzy', function () {
     return view('yatzy');
 });
 Route::post('/yatzy', function () {
     return view('yatzy');
 });
 
-Route::get('/books', function() {
+Route::get('/books', function () {
     return view('books');
 });
 
-Route::get('/highscore', function() {
+Route::get('/highscore', function () {
     return view('highscore');
 });
 

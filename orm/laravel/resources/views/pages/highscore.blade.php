@@ -1,11 +1,14 @@
 <?php
+
 /**
  * Standard view template to generate a simple web page, or part of a web page.
  */
 
 declare(strict_types=1);
 
-use Joki20\Models\Highscore; // Book class
+use Joki20\Models\Highscore;
+
+// Book class
 
 ?>
 
@@ -31,8 +34,7 @@ $scoreDesc = $highscores->sortByDesc('score');
     <tbody>
 <?php
 
-foreach ($scoreDesc as $row)
-{ ?>
+foreach ($scoreDesc as $row) { ?>
     <tr>
         <td><?= $row->score ?></td>
     </tr>

@@ -1,583 +1,237 @@
 
-FILE: ...4\home\johan\dbwebb-kurser\mvc\me\framework\laravel\app\Console\Kernel.php
---------------------------------------------------------------------------------
-FOUND 2 ERRORS AFFECTING 1 LINE
---------------------------------------------------------------------------------
- 37 | ERROR | [x] Expected at least 1 space before "."; 0 found
- 37 | ERROR | [x] Expected at least 1 space after "."; 0 found
---------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
---------------------------------------------------------------------------------
-
-
-FILE: ...dbwebb-kurser\mvc\me\framework\laravel\app\Http\Controllers\Controller.php
---------------------------------------------------------------------------------
+FILE: ...r\mvc\me\orm\laravel\database\migrations\2014_10_12_000000_create_users_table.php
+---------------------------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
---------------------------------------------------------------------------------
- 12 | ERROR | [x] Each imported trait must have its own "use" import statement
---------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+ 7 | ERROR | Each class must be in a namespace of at least one level (a top-level
+   |       | vendor name)
+---------------------------------------------------------------------------------------
 
 
-FILE: ...\dbwebb-kurser\mvc\me\framework\laravel\app\Http\Controllers\Dice\Dice.php
---------------------------------------------------------------------------------
+FILE: ...rm\laravel\database\migrations\2014_10_12_100000_create_password_resets_table.php
+---------------------------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
---------------------------------------------------------------------------------
- 6 | ERROR | [x] Header blocks must be separated by a single blank line
---------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+ 7 | ERROR | Each class must be in a namespace of at least one level (a top-level
+   |       | vendor name)
+---------------------------------------------------------------------------------------
 
 
-FILE: ...ebb-kurser\mvc\me\framework\laravel\app\Http\Controllers\Game21\Game21.php
---------------------------------------------------------------------------------
-FOUND 9 ERRORS AFFECTING 8 LINES
---------------------------------------------------------------------------------
-  17 | ERROR | [x] Opening brace should be on a new line
-  32 | ERROR | [x] Expected 1 space(s) after SWITCH keyword; 0 found
-  51 | ERROR | [x] Opening brace should be on a new line
-  75 | ERROR | [x] Opening brace should be on a new line
- 119 | ERROR | [x] Line indented incorrectly; expected 8 spaces, found 9
- 119 | ERROR | [x] Closing brace indented incorrectly; expected 8 spaces, found
-     |       |     9
- 133 | ERROR | [x] Opening brace should be on a new line
- 144 | ERROR | [x] Opening brace should be on a new line
- 146 | ERROR | [x] Expected 1 space(s) after closing parenthesis; found newline
---------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 9 MARKED SNIFF VIOLATIONS AUTOMATICALLY
---------------------------------------------------------------------------------
-
-
-FILE: ...ser\mvc\me\framework\laravel\app\Http\Controllers\HelloWorldController.php
---------------------------------------------------------------------------------
-FOUND 2 ERRORS AFFECTING 1 LINE
---------------------------------------------------------------------------------
- 15 | ERROR | [x] Incorrect spacing between argument "$message" and equals
-    |       |     sign; expected 1 but found 0
- 15 | ERROR | [x] Incorrect spacing between default value and equals sign for
-    |       |     argument "$message"; expected 1 but found 0
---------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
---------------------------------------------------------------------------------
-
-
-FILE: ...bwebb-kurser\mvc\me\framework\laravel\app\Http\Controllers\Yatzy\Yatzy.php
---------------------------------------------------------------------------------
-FOUND 11 ERRORS AFFECTING 10 LINES
---------------------------------------------------------------------------------
-  69 | ERROR | [x] Expected 1 space(s) after SWITCH keyword; 0 found
-  78 | ERROR | [x] Line indented incorrectly; expected 16 spaces, found 20
-  82 | ERROR | [x] Terminating statement must be indented to the same level as
-     |       |     the CASE body
- 130 | ERROR | [x] Opening brace should be on a new line
- 145 | ERROR | [x] Opening brace should be on a new line
- 156 | ERROR | [x] No space found after comma in argument list
- 208 | ERROR | [x] Function closing brace must go on the next line following
-     |       |     the body; found 1 blank lines before brace
- 210 | ERROR | [x] Opening brace should be on a new line
- 236 | ERROR | [x] Opening parenthesis of a multi-line function call must be
-     |       |     the last content on the line
- 258 | ERROR | [x] Line indented incorrectly; expected 4 spaces, found 5
- 258 | ERROR | [x] Closing brace indented incorrectly; expected 4 spaces, found
-     |       |     5
---------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 11 MARKED SNIFF VIOLATIONS AUTOMATICALLY
---------------------------------------------------------------------------------
-
-
-FILE: ...in64\home\johan\dbwebb-kurser\mvc\me\framework\laravel\app\Models\User.php
---------------------------------------------------------------------------------
+FILE: ...me\orm\laravel\database\migrations\2019_08_19_000000_create_failed_jobs_table.php
+---------------------------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
---------------------------------------------------------------------------------
- 12 | ERROR | [x] Each imported trait must have its own "use" import statement
---------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+ 7 | ERROR | Each class must be in a namespace of at least one level (a top-level
+   |       | vendor name)
+---------------------------------------------------------------------------------------
 
 
-FILE: ...in64\home\johan\dbwebb-kurser\mvc\me\framework\laravel\config\database.php
---------------------------------------------------------------------------------
-FOUND 2 ERRORS AFFECTING 1 LINE
---------------------------------------------------------------------------------
- 126 | ERROR | [x] Expected at least 1 space before "."; 0 found
- 126 | ERROR | [x] Expected at least 1 space after "."; 0 found
---------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
---------------------------------------------------------------------------------
-
-
-FILE: ...4\home\johan\dbwebb-kurser\mvc\me\framework\laravel\config\filesystems.php
---------------------------------------------------------------------------------
-FOUND 2 ERRORS AFFECTING 1 LINE
---------------------------------------------------------------------------------
- 41 | ERROR | [x] Expected at least 1 space before "."; 0 found
- 41 | ERROR | [x] Expected at least 1 space after "."; 0 found
---------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
---------------------------------------------------------------------------------
-
-
-FILE: ...win64\home\johan\dbwebb-kurser\mvc\me\framework\laravel\config\session.php
---------------------------------------------------------------------------------
-FOUND 2 ERRORS AFFECTING 1 LINE
---------------------------------------------------------------------------------
- 131 | ERROR | [x] Expected at least 1 space before "."; 0 found
- 131 | ERROR | [x] Expected at least 1 space after "."; 0 found
---------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
---------------------------------------------------------------------------------
-
-
-FILE: ...ework\laravel\database\migrations\2014_10_12_000000_create_users_table.php
---------------------------------------------------------------------------------
+FILE: ...\orm\laravel\storage\framework\views\05a1feb9a2ec79d8e00cedf481686646f41512f9.php
+---------------------------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
---------------------------------------------------------------------------------
- 7 | ERROR | Each class must be in a namespace of at least one level (a
-   |       | top-level vendor name)
---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+ 137 | ERROR | The file header must be the first content in the file
+---------------------------------------------------------------------------------------
 
 
-FILE: ...vel\database\migrations\2014_10_12_100000_create_password_resets_table.php
---------------------------------------------------------------------------------
+FILE: ...\orm\laravel\storage\framework\views\19a3ca7ead0c5dc9be0248ec8479e2308b62a617.php
+---------------------------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
---------------------------------------------------------------------------------
- 7 | ERROR | Each class must be in a namespace of at least one level (a
-   |       | top-level vendor name)
---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+ 7 | ERROR | The file header must be the first content in the file
+---------------------------------------------------------------------------------------
 
 
-FILE: ...laravel\database\migrations\2019_08_19_000000_create_failed_jobs_table.php
---------------------------------------------------------------------------------
+FILE: ...\orm\laravel\storage\framework\views\2b3027771a15f842bd8d98b4b5febbd9283c3038.php
+---------------------------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
---------------------------------------------------------------------------------
- 7 | ERROR | Each class must be in a namespace of at least one level (a
-   |       | top-level vendor name)
---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+ 5 | ERROR | The file header must be the first content in the file
+---------------------------------------------------------------------------------------
 
 
-FILE: ...ygwin64\home\johan\dbwebb-kurser\mvc\me\framework\laravel\public\index.php
---------------------------------------------------------------------------------
-FOUND 8 ERRORS AFFECTING 4 LINES
---------------------------------------------------------------------------------
- 19 | ERROR | [x] Expected at least 1 space before "."; 0 found
- 19 | ERROR | [x] Expected at least 1 space after "."; 0 found
- 20 | ERROR | [x] Expected at least 1 space before "."; 0 found
- 20 | ERROR | [x] Expected at least 1 space after "."; 0 found
- 34 | ERROR | [x] Expected at least 1 space before "."; 0 found
- 34 | ERROR | [x] Expected at least 1 space after "."; 0 found
- 47 | ERROR | [x] Expected at least 1 space before "."; 0 found
- 47 | ERROR | [x] Expected at least 1 space after "."; 0 found
---------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 8 MARKED SNIFF VIOLATIONS AUTOMATICALLY
---------------------------------------------------------------------------------
-
-
-FILE: ...bwebb-kurser\mvc\me\framework\laravel\resources\views\pages\dice.blade.php
---------------------------------------------------------------------------------
+FILE: ...\orm\laravel\storage\framework\views\35cb3ddc516062cdc1a26bddbeb3b5f9284a115d.php
+---------------------------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
---------------------------------------------------------------------------------
- 1 | ERROR | [x] Header blocks must be separated by a single blank line
---------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+ 5 | ERROR | The file header must be the first content in the file
+---------------------------------------------------------------------------------------
 
 
-FILE: ...ebb-kurser\mvc\me\framework\laravel\resources\views\pages\game21.blade.php
---------------------------------------------------------------------------------
+FILE: ...\orm\laravel\storage\framework\views\4becdf633e61ddd13fbf685c01c37eea727b7140.php
+---------------------------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
---------------------------------------------------------------------------------
- 1 | ERROR | [x] Header blocks must be separated by a single blank line
---------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+ 5 | ERROR | The file header must be the first content in the file
+---------------------------------------------------------------------------------------
 
 
-FILE: ...bwebb-kurser\mvc\me\framework\laravel\resources\views\pages\home.blade.php
---------------------------------------------------------------------------------
+FILE: ...\orm\laravel\storage\framework\views\527f3ca992a6050cd9f9b8f27d13f9dfce0bd005.php
+---------------------------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
---------------------------------------------------------------------------------
- 1 | ERROR | [x] Header blocks must be separated by a single blank line
---------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+ 5 | ERROR | The file header must be the first content in the file
+---------------------------------------------------------------------------------------
 
 
-FILE: ...webb-kurser\mvc\me\framework\laravel\resources\views\pages\yatzy.blade.php
---------------------------------------------------------------------------------
+FILE: ...\orm\laravel\storage\framework\views\540a52813b45bde38894293f2be929a63c3f914a.php
+---------------------------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
---------------------------------------------------------------------------------
- 9 | ERROR | [x] Header blocks must be separated by a single blank line
---------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+ 133 | ERROR | The file header must be the first content in the file
+---------------------------------------------------------------------------------------
 
 
-FILE: ...\cygwin64\home\johan\dbwebb-kurser\mvc\me\framework\laravel\routes\web.php
---------------------------------------------------------------------------------
-FOUND 3 ERRORS AFFECTING 3 LINES
---------------------------------------------------------------------------------
- 40 | ERROR | [x] Expected 1 space after FUNCTION keyword; 0 found
- 43 | ERROR | [x] Expected 1 space after FUNCTION keyword; 0 found
- 50 | ERROR | [x] Expected 1 space after FUNCTION keyword; 0 found
---------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
---------------------------------------------------------------------------------
-
-
-FILE: C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\framework\laravel\server.php
-------------------------------------------------------------------------------
-FOUND 6 ERRORS AFFECTING 2 LINES
-------------------------------------------------------------------------------
- 17 | ERROR | [x] Expected at least 1 space before "."; 0 found
- 17 | ERROR | [x] Expected at least 1 space after "."; 0 found
- 17 | ERROR | [x] Expected at least 1 space before "."; 0 found
- 17 | ERROR | [x] Expected at least 1 space after "."; 0 found
- 21 | ERROR | [x] Expected at least 1 space before "."; 0 found
- 21 | ERROR | [x] Expected at least 1 space after "."; 0 found
-------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 6 MARKED SNIFF VIOLATIONS AUTOMATICALLY
-------------------------------------------------------------------------------
-
-
-FILE: ...ravel\storage\framework\views\05a1feb9a2ec79d8e00cedf481686646f41512f9.php
---------------------------------------------------------------------------------
-FOUND 10 ERRORS AFFECTING 5 LINES
---------------------------------------------------------------------------------
-  27 | ERROR | [x] Expected 1 space(s) after IF keyword; 0 found
-  27 | ERROR | [x] Expected 1 space(s) after closing parenthesis; found 0
-  29 | ERROR | [x] Expected 1 space(s) after IF keyword; 0 found
-  29 | ERROR | [x] Expected 1 space(s) after closing parenthesis; found 0
-  31 | ERROR | [x] Expected 1 space(s) after ELSE keyword; 0 found
-  34 | ERROR | [x] Expected 1 space(s) after IF keyword; 0 found
-  34 | ERROR | [x] Expected 1 space(s) after closing parenthesis; found 0
- 137 | ERROR | [ ] The file header must be the first content in the file
- 137 | ERROR | [x] Header blocks must be separated by a single blank line
- 137 | ERROR | [x] Header blocks must be separated by a single blank line
---------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 9 MARKED SNIFF VIOLATIONS AUTOMATICALLY
---------------------------------------------------------------------------------
-
-
-FILE: ...ravel\storage\framework\views\2b3027771a15f842bd8d98b4b5febbd9283c3038.php
---------------------------------------------------------------------------------
-FOUND 6 ERRORS AFFECTING 2 LINES
---------------------------------------------------------------------------------
- 1 | ERROR | [x] Opening PHP tag must be on a line by itself
- 4 | ERROR | [ ] The file header must be the first content in the file
- 4 | ERROR | [x] Header blocks must be separated by a single blank line
- 4 | ERROR | [x] Header blocks must be separated by a single blank line
- 4 | ERROR | [x] Expected 1 newline at end of file; 0 found
- 4 | ERROR | [x] A closing tag is not permitted at the end of a PHP file
---------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 5 MARKED SNIFF VIOLATIONS AUTOMATICALLY
---------------------------------------------------------------------------------
-
-
-FILE: ...ravel\storage\framework\views\2ecc2be64416cca7ea1f406edf84324596786f7c.php
---------------------------------------------------------------------------------
+FILE: ...\orm\laravel\storage\framework\views\5b911f3784448f45a9e34117b99ff75d86409d03.php
+---------------------------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
---------------------------------------------------------------------------------
- 1 | ERROR | [x] Header blocks must be separated by a single blank line
---------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+ 39 | ERROR | The file header must be the first content in the file
+---------------------------------------------------------------------------------------
 
 
-FILE: ...ravel\storage\framework\views\3046a2738a4bed61236ebed27e4632056dd74543.php
---------------------------------------------------------------------------------
+FILE: ...\orm\laravel\storage\framework\views\65d2c70f98a4eaea296b0da6c9a98ee03708c15c.php
+---------------------------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
---------------------------------------------------------------------------------
- 1 | ERROR | [x] Header blocks must be separated by a single blank line
---------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+ 5 | ERROR | The file header must be the first content in the file
+---------------------------------------------------------------------------------------
 
 
-FILE: ...ravel\storage\framework\views\51ad3a248be8d5551c4fb78e598bdbddee05da92.php
---------------------------------------------------------------------------------
+FILE: ...\orm\laravel\storage\framework\views\6cd6ef51b2c5a905743001f7e5487a7e8787c2de.php
+---------------------------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
---------------------------------------------------------------------------------
- 9 | ERROR | [x] Header blocks must be separated by a single blank line
---------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+ 5 | ERROR | The file header must be the first content in the file
+---------------------------------------------------------------------------------------
 
 
-FILE: ...ravel\storage\framework\views\527f3ca992a6050cd9f9b8f27d13f9dfce0bd005.php
---------------------------------------------------------------------------------
-FOUND 4 ERRORS AFFECTING 1 LINE
---------------------------------------------------------------------------------
- 5 | ERROR | [ ] The file header must be the first content in the file
- 5 | ERROR | [x] Header blocks must be separated by a single blank line
- 5 | ERROR | [x] Header blocks must be separated by a single blank line
- 5 | ERROR | [x] A closing tag is not permitted at the end of a PHP file
---------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
---------------------------------------------------------------------------------
-
-
-FILE: ...ravel\storage\framework\views\540a52813b45bde38894293f2be929a63c3f914a.php
---------------------------------------------------------------------------------
-FOUND 10 ERRORS AFFECTING 5 LINES
---------------------------------------------------------------------------------
-  25 | ERROR | [x] Expected 1 space(s) after IF keyword; 0 found
-  25 | ERROR | [x] Expected 1 space(s) after closing parenthesis; found 0
-  27 | ERROR | [x] Expected 1 space(s) after IF keyword; 0 found
-  27 | ERROR | [x] Expected 1 space(s) after closing parenthesis; found 0
-  29 | ERROR | [x] Expected 1 space(s) after ELSE keyword; 0 found
-  32 | ERROR | [x] Expected 1 space(s) after IF keyword; 0 found
-  32 | ERROR | [x] Expected 1 space(s) after closing parenthesis; found 0
- 133 | ERROR | [ ] The file header must be the first content in the file
- 133 | ERROR | [x] Header blocks must be separated by a single blank line
- 133 | ERROR | [x] Header blocks must be separated by a single blank line
---------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 9 MARKED SNIFF VIOLATIONS AUTOMATICALLY
---------------------------------------------------------------------------------
-
-
-FILE: ...ravel\storage\framework\views\5b911f3784448f45a9e34117b99ff75d86409d03.php
---------------------------------------------------------------------------------
-FOUND 3 ERRORS AFFECTING 1 LINE
---------------------------------------------------------------------------------
- 39 | ERROR | [ ] The file header must be the first content in the file
- 39 | ERROR | [x] Header blocks must be separated by a single blank line
- 39 | ERROR | [x] Header blocks must be separated by a single blank line
---------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
---------------------------------------------------------------------------------
-
-
-FILE: ...ravel\storage\framework\views\7445132619cd7285cfd0cc206284d3eef0f8e82a.php
---------------------------------------------------------------------------------
+FILE: ...\orm\laravel\storage\framework\views\6d71f77f0bb4a238962e2dc10669d2acb9f1ff4f.php
+---------------------------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
---------------------------------------------------------------------------------
- 1 | ERROR | [x] Header blocks must be separated by a single blank line
---------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+ 5 | ERROR | The file header must be the first content in the file
+---------------------------------------------------------------------------------------
 
 
-FILE: ...ravel\storage\framework\views\76cd0064654985d074b811be392a8cf8d3f94a54.php
---------------------------------------------------------------------------------
-FOUND 4 ERRORS AFFECTING 1 LINE
---------------------------------------------------------------------------------
- 5 | ERROR | [ ] The file header must be the first content in the file
- 5 | ERROR | [x] Header blocks must be separated by a single blank line
- 5 | ERROR | [x] Header blocks must be separated by a single blank line
- 5 | ERROR | [x] A closing tag is not permitted at the end of a PHP file
---------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
---------------------------------------------------------------------------------
-
-
-FILE: ...ravel\storage\framework\views\84d2fe08f6af679fc693c46328e846d0709291f9.php
---------------------------------------------------------------------------------
-FOUND 6 ERRORS AFFECTING 2 LINES
---------------------------------------------------------------------------------
- 1 | ERROR | [x] Opening PHP tag must be on a line by itself
- 4 | ERROR | [ ] The file header must be the first content in the file
- 4 | ERROR | [x] Header blocks must be separated by a single blank line
- 4 | ERROR | [x] Header blocks must be separated by a single blank line
- 4 | ERROR | [x] Expected 1 newline at end of file; 0 found
- 4 | ERROR | [x] A closing tag is not permitted at the end of a PHP file
---------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 5 MARKED SNIFF VIOLATIONS AUTOMATICALLY
---------------------------------------------------------------------------------
-
-
-FILE: ...ravel\storage\framework\views\89e436f4997d575d13a946853cf5c4b0937a8c45.php
---------------------------------------------------------------------------------
-FOUND 6 ERRORS AFFECTING 2 LINES
---------------------------------------------------------------------------------
- 1 | ERROR | [x] Opening PHP tag must be on a line by itself
- 4 | ERROR | [ ] The file header must be the first content in the file
- 4 | ERROR | [x] Header blocks must be separated by a single blank line
- 4 | ERROR | [x] Header blocks must be separated by a single blank line
- 4 | ERROR | [x] Expected 1 newline at end of file; 0 found
- 4 | ERROR | [x] A closing tag is not permitted at the end of a PHP file
---------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 5 MARKED SNIFF VIOLATIONS AUTOMATICALLY
---------------------------------------------------------------------------------
-
-
-FILE: ...ravel\storage\framework\views\b6e4a244160a53fc4f7f5e3684ff62026892385c.php
---------------------------------------------------------------------------------
-FOUND 3 ERRORS AFFECTING 1 LINE
---------------------------------------------------------------------------------
- 4 | ERROR | [ ] The file header must be the first content in the file
- 4 | ERROR | [x] Header blocks must be separated by a single blank line
- 4 | ERROR | [x] Header blocks must be separated by a single blank line
---------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
---------------------------------------------------------------------------------
-
-
-FILE: ...ravel\storage\framework\views\bb160aaa79fead47762b98ecb9b3e0828288cf5e.php
---------------------------------------------------------------------------------
-FOUND 6 ERRORS AFFECTING 2 LINES
---------------------------------------------------------------------------------
- 1 | ERROR | [x] Opening PHP tag must be on a line by itself
- 4 | ERROR | [ ] The file header must be the first content in the file
- 4 | ERROR | [x] Header blocks must be separated by a single blank line
- 4 | ERROR | [x] Header blocks must be separated by a single blank line
- 4 | ERROR | [x] Expected 1 newline at end of file; 0 found
- 4 | ERROR | [x] A closing tag is not permitted at the end of a PHP file
---------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 5 MARKED SNIFF VIOLATIONS AUTOMATICALLY
---------------------------------------------------------------------------------
-
-
-FILE: ...ravel\storage\framework\views\c19d941e0940dbf1505c150119e843d6b253833e.php
---------------------------------------------------------------------------------
-FOUND 10 ERRORS AFFECTING 5 LINES
---------------------------------------------------------------------------------
-  25 | ERROR | [x] Expected 1 space(s) after IF keyword; 0 found
-  25 | ERROR | [x] Expected 1 space(s) after closing parenthesis; found 0
-  27 | ERROR | [x] Expected 1 space(s) after IF keyword; 0 found
-  27 | ERROR | [x] Expected 1 space(s) after closing parenthesis; found 0
-  29 | ERROR | [x] Expected 1 space(s) after ELSE keyword; 0 found
-  32 | ERROR | [x] Expected 1 space(s) after IF keyword; 0 found
-  32 | ERROR | [x] Expected 1 space(s) after closing parenthesis; found 0
- 133 | ERROR | [ ] The file header must be the first content in the file
- 133 | ERROR | [x] Header blocks must be separated by a single blank line
- 133 | ERROR | [x] Header blocks must be separated by a single blank line
---------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 9 MARKED SNIFF VIOLATIONS AUTOMATICALLY
---------------------------------------------------------------------------------
-
-
-FILE: ...ravel\storage\framework\views\c49bf50a05bcadb1753d909c7734d5a2e7aea499.php
---------------------------------------------------------------------------------
-FOUND 10 ERRORS AFFECTING 5 LINES
---------------------------------------------------------------------------------
-  25 | ERROR | [x] Expected 1 space(s) after IF keyword; 0 found
-  25 | ERROR | [x] Expected 1 space(s) after closing parenthesis; found 0
-  27 | ERROR | [x] Expected 1 space(s) after IF keyword; 0 found
-  27 | ERROR | [x] Expected 1 space(s) after closing parenthesis; found 0
-  29 | ERROR | [x] Expected 1 space(s) after ELSE keyword; 0 found
-  32 | ERROR | [x] Expected 1 space(s) after IF keyword; 0 found
-  32 | ERROR | [x] Expected 1 space(s) after closing parenthesis; found 0
- 133 | ERROR | [ ] The file header must be the first content in the file
- 133 | ERROR | [x] Header blocks must be separated by a single blank line
- 133 | ERROR | [x] Header blocks must be separated by a single blank line
---------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 9 MARKED SNIFF VIOLATIONS AUTOMATICALLY
---------------------------------------------------------------------------------
-
-
-FILE: ...ravel\storage\framework\views\d0be65e5b59889eecf9716ddfaeb6bbdf868cfe4.php
---------------------------------------------------------------------------------
-FOUND 3 ERRORS AFFECTING 1 LINE
---------------------------------------------------------------------------------
- 39 | ERROR | [ ] The file header must be the first content in the file
- 39 | ERROR | [x] Header blocks must be separated by a single blank line
- 39 | ERROR | [x] Header blocks must be separated by a single blank line
---------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
---------------------------------------------------------------------------------
-
-
-FILE: ...ravel\storage\framework\views\dab0af8ecc9f56f2ec6ad47dd75419d09b4714bf.php
---------------------------------------------------------------------------------
-FOUND 6 ERRORS AFFECTING 2 LINES
---------------------------------------------------------------------------------
- 1 | ERROR | [x] Opening PHP tag must be on a line by itself
- 4 | ERROR | [ ] The file header must be the first content in the file
- 4 | ERROR | [x] Header blocks must be separated by a single blank line
- 4 | ERROR | [x] Header blocks must be separated by a single blank line
- 4 | ERROR | [x] Expected 1 newline at end of file; 0 found
- 4 | ERROR | [x] A closing tag is not permitted at the end of a PHP file
---------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 5 MARKED SNIFF VIOLATIONS AUTOMATICALLY
---------------------------------------------------------------------------------
-
-
-FILE: ...ravel\storage\framework\views\dba36f712f7ede752c36079af60bb2bed67c8e90.php
---------------------------------------------------------------------------------
-FOUND 4 ERRORS AFFECTING 1 LINE
---------------------------------------------------------------------------------
- 7 | ERROR | [ ] The file header must be the first content in the file
- 7 | ERROR | [x] Header blocks must be separated by a single blank line
- 7 | ERROR | [x] Header blocks must be separated by a single blank line
- 7 | ERROR | [x] Expected 1 newline at end of file; 0 found
---------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
---------------------------------------------------------------------------------
-
-
-FILE: ...ravel\storage\framework\views\fbf8cf65e4ff8b8e571aede99ae7a72f15249525.php
---------------------------------------------------------------------------------
-FOUND 4 ERRORS AFFECTING 1 LINE
---------------------------------------------------------------------------------
- 5 | ERROR | [ ] The file header must be the first content in the file
- 5 | ERROR | [x] Header blocks must be separated by a single blank line
- 5 | ERROR | [x] Header blocks must be separated by a single blank line
- 5 | ERROR | [x] A closing tag is not permitted at the end of a PHP file
---------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 3 MARKED SNIFF VIOLATIONS AUTOMATICALLY
---------------------------------------------------------------------------------
-
-
-FILE: ...\johan\dbwebb-kurser\mvc\me\framework\laravel\tests\CreatesApplication.php
---------------------------------------------------------------------------------
-FOUND 2 ERRORS AFFECTING 1 LINE
---------------------------------------------------------------------------------
- 16 | ERROR | [x] Expected at least 1 space before "."; 0 found
- 16 | ERROR | [x] Expected at least 1 space after "."; 0 found
---------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 2 MARKED SNIFF VIOLATIONS AUTOMATICALLY
---------------------------------------------------------------------------------
-
-
-FILE: ...johan\dbwebb-kurser\mvc\me\framework\laravel\tests\Feature\ExampleTest.php
---------------------------------------------------------------------------------
+FILE: ...\orm\laravel\storage\framework\views\76cd0064654985d074b811be392a8cf8d3f94a54.php
+---------------------------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
---------------------------------------------------------------------------------
- 15 | ERROR | Method name "ExampleTest::test_example" is not in camel caps
-    |       | format
---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+ 5 | ERROR | The file header must be the first content in the file
+---------------------------------------------------------------------------------------
 
 
-FILE: ...dbwebb-kurser\mvc\me\framework\laravel\tests\Unit\DiceCreateObjectTest.php
---------------------------------------------------------------------------------
+FILE: ...\orm\laravel\storage\framework\views\84d2fe08f6af679fc693c46328e846d0709291f9.php
+---------------------------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
---------------------------------------------------------------------------------
- 1 | ERROR | [x] Header blocks must be separated by a single blank line
---------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+ 5 | ERROR | The file header must be the first content in the file
+---------------------------------------------------------------------------------------
 
 
-FILE: ...bb-kurser\mvc\me\framework\laravel\tests\Unit\DiceHandCreateObjectTest.php
---------------------------------------------------------------------------------
+FILE: ...\orm\laravel\storage\framework\views\89abe7f8cf478eea29250e01aa7db89712e69078.php
+---------------------------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
---------------------------------------------------------------------------------
- 71 | ERROR | [x] The closing brace for the class must go on the next line
-    |       |     after the body
---------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+ 39 | ERROR | The file header must be the first content in the file
+---------------------------------------------------------------------------------------
 
 
-FILE: ...me\johan\dbwebb-kurser\mvc\me\framework\laravel\tests\Unit\ExampleTest.php
---------------------------------------------------------------------------------
+FILE: ...\orm\laravel\storage\framework\views\89e436f4997d575d13a946853cf5c4b0937a8c45.php
+---------------------------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
---------------------------------------------------------------------------------
- 14 | ERROR | Method name "ExampleTest::test_example" is not in camel caps
-    |       | format
---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+ 5 | ERROR | The file header must be the first content in the file
+---------------------------------------------------------------------------------------
 
 
-FILE: ...webb-kurser\mvc\me\framework\laravel\tests\Unit\Game21CreateObjectTest.php
---------------------------------------------------------------------------------
+FILE: ...\orm\laravel\storage\framework\views\b6e4a244160a53fc4f7f5e3684ff62026892385c.php
+---------------------------------------------------------------------------------------
 FOUND 1 ERROR AFFECTING 1 LINE
---------------------------------------------------------------------------------
- 187 | ERROR | [x] The closing brace for the class must go on the next line
-     |       |     after the body
---------------------------------------------------------------------------------
-PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+ 4 | ERROR | The file header must be the first content in the file
+---------------------------------------------------------------------------------------
 
-Time: 2.91 secs; Memory: 8MB
+
+FILE: ...\orm\laravel\storage\framework\views\bb160aaa79fead47762b98ecb9b3e0828288cf5e.php
+---------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+---------------------------------------------------------------------------------------
+ 5 | ERROR | The file header must be the first content in the file
+---------------------------------------------------------------------------------------
+
+
+FILE: ...\orm\laravel\storage\framework\views\bd70ae0f0ea13a01005bf8935596ba5e63ea783a.php
+---------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+---------------------------------------------------------------------------------------
+ 5 | ERROR | The file header must be the first content in the file
+---------------------------------------------------------------------------------------
+
+
+FILE: ...\orm\laravel\storage\framework\views\c19d941e0940dbf1505c150119e843d6b253833e.php
+---------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+---------------------------------------------------------------------------------------
+ 133 | ERROR | The file header must be the first content in the file
+---------------------------------------------------------------------------------------
+
+
+FILE: ...\orm\laravel\storage\framework\views\c49bf50a05bcadb1753d909c7734d5a2e7aea499.php
+---------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+---------------------------------------------------------------------------------------
+ 133 | ERROR | The file header must be the first content in the file
+---------------------------------------------------------------------------------------
+
+
+FILE: ...\orm\laravel\storage\framework\views\c5406adf40125f7effdf143ce361f8287cf501a0.php
+---------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+---------------------------------------------------------------------------------------
+ 5 | ERROR | The file header must be the first content in the file
+---------------------------------------------------------------------------------------
+
+
+FILE: ...\orm\laravel\storage\framework\views\d0be65e5b59889eecf9716ddfaeb6bbdf868cfe4.php
+---------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+---------------------------------------------------------------------------------------
+ 39 | ERROR | The file header must be the first content in the file
+---------------------------------------------------------------------------------------
+
+
+FILE: ...\orm\laravel\storage\framework\views\dab0af8ecc9f56f2ec6ad47dd75419d09b4714bf.php
+---------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+---------------------------------------------------------------------------------------
+ 5 | ERROR | The file header must be the first content in the file
+---------------------------------------------------------------------------------------
+
+
+FILE: ...\orm\laravel\storage\framework\views\dba36f712f7ede752c36079af60bb2bed67c8e90.php
+---------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+---------------------------------------------------------------------------------------
+ 7 | ERROR | The file header must be the first content in the file
+---------------------------------------------------------------------------------------
+
+
+FILE: ...\orm\laravel\storage\framework\views\fbf8cf65e4ff8b8e571aede99ae7a72f15249525.php
+---------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+---------------------------------------------------------------------------------------
+ 5 | ERROR | The file header must be the first content in the file
+---------------------------------------------------------------------------------------
+
+
+FILE: ...ygwin64\home\johan\dbwebb-kurser\mvc\me\orm\laravel\tests\Feature\ExampleTest.php
+---------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+---------------------------------------------------------------------------------------
+ 15 | ERROR | Method name "ExampleTest::test_example" is not in camel caps format
+---------------------------------------------------------------------------------------
+
+Time: 3.73 secs; Memory: 8MB
 

@@ -183,5 +183,4 @@ class Game21CreateObjectTest extends TestCase
   //               ';
   //         $this->assertEquals($exp, $res);
   // }
-
 }

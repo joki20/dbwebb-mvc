@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Standard view template to generate a simple web page, or part of a web page.
  */

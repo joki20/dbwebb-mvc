@@ -68,7 +68,7 @@ phpcbf:
 ifneq ($(wildcard test),)
 	- [ ! -f .phpcs.xml ] || $(PHPCBF) --standard=.phpcs.xml
 else
-	- [ ! -f .phpcs.xml ] || $(PHPCBF) --standard=.phpcs.xml app
+	- [ ! -f .phpcs.xml ] || $(PHPCBF) --standard=.phpcs.xml
 endif
 
 phpcpd: prepare

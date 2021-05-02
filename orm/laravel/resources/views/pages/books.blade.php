@@ -1,11 +1,15 @@
 <?php
+
 /**
  * Standard view template to generate a simple web page, or part of a web page.
  */
 
 declare(strict_types=1);
 
-use Joki20\Models\Book; // Book class
+use Joki20\Models\Book;
+
+// Book class
+
 
 ?>
 
@@ -28,12 +32,12 @@ $books = Book::all();
     </thead>
     <tbody>
 <?php
-    foreach ($books as $book) { ?>
+foreach ($books as $book) { ?>
         <tr>
             <td><?= $book->title ?></td>
             <td><?= $book->isbn ?></td>
             <td><?= $book->author ?></td>
             <td><img src='<?= $book->image ?>'></td>
-    <?php }; ?>
+<?php }; ?>
     </tbody>
 </table>

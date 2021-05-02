@@ -67,5 +67,4 @@ class DiceHandCreateObjectTest extends TestCase
         $res += substr_count($rollResult, "6");
         $this->assertEquals($exp, $res);
     }
-
 }

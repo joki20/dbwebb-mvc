@@ -6,7 +6,9 @@
 
 declare(strict_types=1);
 
-use Joki20\Http\Controllers\Yatzy\Yatzy; // class Yatzy
+use Joki20\Http\Controllers\Yatzy\Yatzy;
+
+// class Yatzy
 
 ?>
 

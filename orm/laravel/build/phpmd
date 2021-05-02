@@ -1,0 +1,23 @@
+C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\orm\laravel\app\Console\Kernel.php:25	Avoid unused parameters such as '$schedule'.
+C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\orm\laravel\app\Exceptions\Handler.php:37	Avoid unused parameters such as '$e'.
+C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\orm\laravel\app\Http\Controllers\Yatzy\Yatzy.php:22	The method yatzy() has a Cyclomatic Complexity of 22. The configured cyclomatic complexity threshold is 10.
+C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\orm\laravel\app\Http\Controllers\Yatzy\Yatzy.php:22	The method yatzy() has an NPath complexity of 151552. The configured NPath complexity threshold is 200.
+C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\orm\laravel\app\Http\Controllers\Yatzy\Yatzy.php:22	The method yatzy() has 110 lines of code. Current threshold is set to 100. Avoid really long methods.
+C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\orm\laravel\app\Http\Controllers\Yatzy\Yatzy.php:149	The method rollDice() has a Cyclomatic Complexity of 10. The configured cyclomatic complexity threshold is 10.
+C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\orm\laravel\app\Providers\BroadcastServiceProvider.php:17	Avoid using static access to class '\Illuminate\Support\Facades\Broadcast' in method 'boot'.
+C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\orm\laravel\app\Providers\RouteServiceProvider.php:59	Avoid using static access to class '\Illuminate\Support\Facades\RateLimiter' in method 'configureRateLimiting'.
+C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\orm\laravel\database\factories\UserFactory.php:30	Avoid using static access to class '\Illuminate\Support\Str' in method 'definition'.
+C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\orm\laravel\database\factories\UserFactory.php:41	Avoid unused parameters such as '$attributes'.
+C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\orm\laravel\database\migrations\2014_10_12_000000_create_users_table.php:14	Avoid using short method names like CreateUsersTable::up(). The configured minimum method name length is 3.
+C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\orm\laravel\database\migrations\2014_10_12_000000_create_users_table.php:14	Avoid using short method names like CreateUsersTable::up(). The configured minimum method name length is 3.
+C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\orm\laravel\database\migrations\2014_10_12_000000_create_users_table.php:16	Avoid using static access to class '\Illuminate\Support\Facades\Schema' in method 'up'.
+C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\orm\laravel\database\migrations\2014_10_12_000000_create_users_table.php:34	Avoid using static access to class '\Illuminate\Support\Facades\Schema' in method 'down'.
+C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\orm\laravel\database\migrations\2014_10_12_100000_create_password_resets_table.php:14	Avoid using short method names like CreatePasswordResetsTable::up(). The configured minimum method name length is 3.
+C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\orm\laravel\database\migrations\2014_10_12_100000_create_password_resets_table.php:14	Avoid using short method names like CreatePasswordResetsTable::up(). The configured minimum method name length is 3.
+C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\orm\laravel\database\migrations\2014_10_12_100000_create_password_resets_table.php:16	Avoid using static access to class '\Illuminate\Support\Facades\Schema' in method 'up'.
+C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\orm\laravel\database\migrations\2014_10_12_100000_create_password_resets_table.php:30	Avoid using static access to class '\Illuminate\Support\Facades\Schema' in method 'down'.
+C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\orm\laravel\database\migrations\2019_08_19_000000_create_failed_jobs_table.php:14	Avoid using short method names like CreateFailedJobsTable::up(). The configured minimum method name length is 3.
+C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\orm\laravel\database\migrations\2019_08_19_000000_create_failed_jobs_table.php:14	Avoid using short method names like CreateFailedJobsTable::up(). The configured minimum method name length is 3.
+C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\orm\laravel\database\migrations\2019_08_19_000000_create_failed_jobs_table.php:16	Avoid using static access to class '\Illuminate\Support\Facades\Schema' in method 'up'.
+C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\orm\laravel\database\migrations\2019_08_19_000000_create_failed_jobs_table.php:34	Avoid using static access to class '\Illuminate\Support\Facades\Schema' in method 'down'.
+C:\cygwin64\home\johan\dbwebb-kurser\mvc\me\orm\laravel\tests\Feature\ExampleTest.php:15	The method test_example is not named in camelCase.
