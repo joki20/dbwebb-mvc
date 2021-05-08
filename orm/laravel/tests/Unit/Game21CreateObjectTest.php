@@ -161,7 +161,7 @@ class Game21CreateObjectTest extends TestCase
     {
         $game = new Game21();
         $this->assertInstanceOf("Joki20\Http\Controllers\Game21\Game21", $game);
-        session()->put('computerScore',22);
+        session()->put('computerScore', 22);
         session()->put('playerScore', 21);
 
         $res = $game->computerTurn();
@@ -183,5 +183,5 @@ class Game21CreateObjectTest extends TestCase
                 <p>Computer rolled ' . session('computerRolls') . ' times</p>
                 ';
           $this->assertEquals($exp, $res);
-  }
+    }
 }
