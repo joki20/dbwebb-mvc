@@ -1,12 +1,12 @@
-BIN        := .bin
-VENDORBIN  := vendor/bin
-PHPLOC     := $(BIN)/phploc
-PHPCS      := $(BIN)/phpcs
-PHPCBF     := $(BIN)/phpcbf
-PHPCPD     := $(BIN)/phpcpd
-PHPMD      := $(BIN)/phpmd
-PHPSTAN    := $(VENDORBIN)/phpstan
-PHPUNIT    := $(VENDORBIN)/phpunit
+BIN			:= .bin
+VENDORBIN	:= vendor/bin
+PHPLOC		:= $(BIN)/phploc
+PHPCS		:= $(BIN)/phpcs
+PHPCBF		:= $(BIN)/phpcbf
+PHPCPD		:= $(BIN)/phpcpd
+PHPMD		:= $(BIN)/phpmd
+PHPSTAN		:= $(VENDORBIN)/phpstan
+PHPUNIT		:= $(VENDORBIN)/phpunit
 
 all:
 	@echo "Review the file 'Makefile' to see what targets are supported."
@@ -68,7 +68,7 @@ phpcbf:
 ifneq ($(wildcard test),)
 	- [ ! -f .phpcs.xml ] || $(PHPCBF) --standard=.phpcs.xml
 else
-	- [ ! -f .phpcs.xml ] || $(PHPCBF) --standard=.phpcs.xml src
+	- [ ! -f .phpcs.xml ] || $(PHPCBF) --standard=.phpcs.xml
 endif
 
 phpcpd: prepare

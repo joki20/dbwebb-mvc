@@ -3,7 +3,7 @@
 namespace Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
-use App\Http\Controllers\GraphicalDice;
+use Joki20\Http\Controllers\GraphicalDice\GraphicalDice;
 
 /**
  * Test cases for class Guess.
@@ -16,13 +16,13 @@ class GraphicalDiceCreateObjectTest extends TestCase
     public function testCreateObject()
     {
         $dice = new GraphicalDice(6);
-        $this->assertInstanceOf("App\Http\Controllers\GraphicalDice", $dice);
+        $this->assertInstanceOf("Joki20\Http\Controllers\GraphicalDice\GraphicalDice", $dice);
     }
 
     public function testGetRolls()
     {
         $dice = new GraphicalDice(6);
-        $this->assertInstanceOf("App\Http\Controllers\GraphicalDice", $dice);
+        $this->assertInstanceOf("Joki20\Http\Controllers\GraphicalDice\GraphicalDice", $dice);
 
         $exp = 1;
         $res = $dice->getRolls();
@@ -32,7 +32,7 @@ class GraphicalDiceCreateObjectTest extends TestCase
     public function testGraphic()
     {
         $dice = new GraphicalDice(6);
-        $this->assertInstanceOf("App\Http\Controllers\GraphicalDice", $dice);
+        $this->assertInstanceOf("Joki20\Http\Controllers\GraphicalDice\GraphicalDice", $dice);
 
         $res = $dice->graphic();
         $exp = "<i class";

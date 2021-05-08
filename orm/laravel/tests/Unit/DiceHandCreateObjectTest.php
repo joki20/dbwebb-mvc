@@ -3,7 +3,7 @@
 namespace Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
-use App\Http\Controllers\DiceHand;
+use Joki20\Http\Controllers\DiceHand\DiceHand;
 
 /**
  * Test cases for class Guess.
@@ -16,7 +16,7 @@ class DiceHandCreateObjectTest extends TestCase
     public function testCreateObject()
     {
         $dice = new DiceHand();
-        $this->assertInstanceOf("App\Http\Controllers\DiceHand", $dice);
+        $this->assertInstanceOf("Joki20\Http\Controllers\DiceHand\DiceHand", $dice);
     }
 
     /**
@@ -25,7 +25,7 @@ class DiceHandCreateObjectTest extends TestCase
     public function testGetDices()
     {
         $dice = new DiceHand(5);
-        $this->assertInstanceOf("App\Http\Controllers\DiceHand", $dice);
+        $this->assertInstanceOf("Joki20\Http\Controllers\DiceHand\DiceHand", $dice);
 
         $res = count($dice->getDices());
         $exp = 5;
@@ -38,7 +38,7 @@ class DiceHandCreateObjectTest extends TestCase
     public function testChangeRolls()
     {
         $dice = new DiceHand(5);
-        $this->assertInstanceOf("App\Http\Controllers\DiceHand", $dice);
+        $this->assertInstanceOf("Joki20\Http\Controllers\DiceHand\DiceHand", $dice);
 
         // old nr of rolls
         $res = count($dice->getDices());
@@ -55,7 +55,7 @@ class DiceHandCreateObjectTest extends TestCase
     {
         // thousand dices
         $dice = new DiceHand(1000);
-        $this->assertInstanceOf("App\Http\Controllers\DiceHand", $dice);
+        $this->assertInstanceOf("Joki20\Http\Controllers\DiceHand\DiceHand", $dice);
 
         $exp = 1000; // 1000 results between 1-6 expected
         $rollResult = $dice->getRolls();

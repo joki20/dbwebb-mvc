@@ -1,4 +1,75 @@
 PHPUnit 9.5.4 by Sebastian Bergmann and contributors.
 
-Cannot open file ".\test/config.php".
+..........<form method="POST" id="form-roll">
+                    <input
+                        type="submit"
+                        name="status"
+                        value="Starta spelet"
+                        id="form-roll"
+                        >
+                </form>
+                <form method="POST" id="form-roll">
+                    <input
+                        type="submit"
+                        name="status"
+                        value="Starta spelet"
+                        id="form-roll"
+                        >
+                </form>
+                <form method="POST" id="form-roll">
+                    <input
+                        type="submit"
+                        name="status"
+                        value="Starta spelet"
+                        id="form-roll"
+                        >
+                </form>
+                6<p>SUMMA: 6</p>5<p>SUMMA: 11</p><form method="POST" id="form-roll">
+                    <input
+                        type="submit"
+                        name="status"
+                        value="Starta spelet"
+                        id="form-roll"
+                        >
+                </form>
+                <form method="POST" id="form-roll">
+                    <input
+                        type="submit"
+                        name="status"
+                        value="Starta spelet"
+                        id="form-roll"
+                        >
+                </form>
+                <form method="POST" id="form-roll">
+                    <input
+                        type="submit"
+                        name="status"
+                        value="Starta spelet"
+                        id="form-roll"
+                        >
+                </form>
+                string(385) "
+        <!-- 2. CHOOSE 1 OR 2 DICES -->
+        <h2>Välj antal tärningar att spela med</p>
 
+        <!-- 1 die -->
+        <form method="POST">
+            <input
+                type="submit" name="status" value=1>
+        </form>
+
+        <!-- 2 dice -->
+        <form method="POST">
+            <input
+                type="submit" name="status" value=2>
+        </form>
+        "
+..<p>SUMMA: 0</p>.....                                                 17 / 17 (100%)
+
+Time: 00:02.617, Memory: 36.00 MB
+
+OK (17 tests, 40 assertions)
+
+Generating code coverage report in Clover XML format ... done [00:00.110]
+
+Generating code coverage report in HTML format ... done [00:01.399]

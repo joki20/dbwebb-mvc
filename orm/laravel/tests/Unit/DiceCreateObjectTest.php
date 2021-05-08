@@ -4,7 +4,7 @@
 namespace Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
-use App\Http\Controllers\Dice;
+use Joki20\Http\Controllers\Dice\Dice;
 
 /**
  * Test cases for class Guess.
@@ -17,7 +17,7 @@ class DiceCreateObjectTest extends TestCase
     public function testCreateObject()
     {
         $dice = new Dice();
-        $this->assertInstanceOf("\App\Http\Controllers\Dice", $dice);
+        $this->assertInstanceOf("\Joki20\Http\Controllers\Dice\Dice", $dice);
     }
 
     /**
@@ -27,7 +27,7 @@ class DiceCreateObjectTest extends TestCase
     {
 
         $dice = new Dice();
-        $this->assertInstanceOf("\App\Http\Controllers\Dice", $dice);
+        $this->assertInstanceOf("\Joki20\Http\Controllers\Dice\Dice", $dice);
 
         $res = $dice->changeSides(12);
         $exp = "You have a 12-sided dice";
@@ -41,7 +41,7 @@ class DiceCreateObjectTest extends TestCase
     public function testCreateObjectGetLastRoll()
     {
         $dice = new Dice();
-        $this->assertInstanceOf("App\Http\Controllers\Dice", $dice);
+        $this->assertInstanceOf("Joki20\Http\Controllers\Dice\Dice", $dice);
 
         $dice->roll();
         $res = $dice->getLastRoll();
